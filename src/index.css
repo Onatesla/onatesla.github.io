@@ -24,3 +24,7 @@ code {
 {
   display: none;
 }
+@font-face {
+  font-family: "space grotesk";
+  src: url(./SpaceGrotesk.ttf);
+}
