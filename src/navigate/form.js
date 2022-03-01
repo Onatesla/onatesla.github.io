@@ -12,18 +12,20 @@ const [one, setOne] = useState ({nome : " ",
 email:"paolo.uni.95@gmail.com", message : " ", emaildata: " "});
 // const [list, setList] = useState ([]);
 const sendEmail = (e) => {
+    if (one.name !== ""){
     e.preventDefault();
-   if (one.nome==="" || one.message===""){
-    emailjs.sendForm('service_6ckdu5q', 'template_ddnas2b', form.current,  'user_COHw7BwAfI4bYoD3GOuRd')
+    emailjs.sendForm('service_6ckdu5q', 'template_ddnas2b', form.current, 'user_COHw7BwAfI4bYoD3GOuRd')
       .then((result) => {
           console.log(result.text);
           alert("form inviato")
       }, (error) => {
           console.log(error.text);
       });}
-      else
-      alert("Form non riempito")
-  };
+    else
+    {
+        alert("manda il form completo");
+    }
+}
 // const gestiscidati = (e) => {
 //     e.preventDefault();
 //     if (one.nome && one.email && one.message)
@@ -60,24 +62,23 @@ return(
                 <form className = "input" ref={form} onSubmit = {sendEmail} >
                     <label htmlFor= "nome">
                     <h4 className = "txt label">Nome:</h4>
-                    <input type = "text" id = "name" name = "name"  className = "style name" value = {one.name} onChange = {handleClick}/>
+                    <input type = "text" id = "name" name = "nome"  className = "style name" value = {one.nome} onChange = {handleClick} />
                     </label>
                     <label htmlFor = "email">
                     <h4 className = "txt label" >Email:</h4>
-                    <input type = "text" id = "name" name = "emaildata" value = {one.emaildata} onChange = {handleClick} className = "style name"/>
+                    <input type = "text" id = "email" name = "emaildata" value = {one.emaildata} onChange = {handleClick} className = "style name"/>
                     <input type= "email" value={user_email} className="hidden" />
                     </label>
                     <label htmlFor = "message">
                     <h4 className = "txt label">Messaggio:</h4>
                     <input type = "textarea" id = "message"  name ="message" value  = {one.message} onChange = {handleClick} className = "style messaggio"/>
                     </label>
-
-                    
+                    <div className="btn-container">
+                    <button type = "submit" className = " style submit " onClick={sendEmail}> <h2 className="btn-txt">Manda form!</h2></button>
+                    </div>
                     
                 </form>
-                <div className="btn-container">
-                <button type = "submit" className = " style submit " > <h2 className="btn-txt">Manda form!</h2></button>
-                </div>
+               
 </div>
 </article>
 )
