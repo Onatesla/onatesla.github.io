@@ -1,3 +1,4 @@
+import React from "react";
 import Footer from "../footer";
 import Navbar from "../header";
 import styled from "styled-components";
@@ -11,37 +12,41 @@ display:grid;
 grid-template-rows:12% 12% 5% 40%;
 grid-gap:2%;
 .social-heading{
-    font-family:"space grotesk";
+    font-family:"poppins";
     margin:2%;
     font-size:4em;
 }
 .social-subtitle{
-    font-family:"space grotesk";
+    font-family:"poppins";
     margin:2.4%;;
 }
 .social-hr
-{width:80%;
+{width:100%;
 height:0px;
 border-top:solid 1px #1d1d1d;
 }
 .social-icon
 {
-    width:10%;
+    width:32px;
     position:relative;
-    left:26%;
+    left:2%;
+    margin:2%;
 }
 @media screen and (max-width:800px)
 {
     margin-top:42%;
     .social-heading{
-        height:300px;
+        height:100px;
+        inline-height:2px;
+        font-size:3rem;
+
     }
     .social-subtitle
     {
-        margin-top:23%;
+        margin-top:28%;
     }
     .social-hr{
-        margin-top:32%;
+        margin-top:28%;
     }
     .social-icon
     {
@@ -52,6 +57,9 @@ border-top:solid 1px #1d1d1d;
  `;
 
 function Social() {
+    React.useEffect(()=>{
+        document.title="Digital Photo RC - I Nostri Social"
+    },[])
     return(
         <>
         <Navbar/>

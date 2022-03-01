@@ -13,14 +13,16 @@ email:"paolo.uni.95@gmail.com", message : " ", emaildata: " "});
 // const [list, setList] = useState ([]);
 const sendEmail = (e) => {
     e.preventDefault();
-
+   if (one.nome==="" || one.message===""){
     emailjs.sendForm('service_6ckdu5q', 'template_ddnas2b', form.current,  'user_COHw7BwAfI4bYoD3GOuRd')
       .then((result) => {
           console.log(result.text);
           alert("form inviato")
       }, (error) => {
           console.log(error.text);
-      });
+      });}
+      else
+      alert("Form non riempito")
   };
 // const gestiscidati = (e) => {
 //     e.preventDefault();
@@ -54,6 +56,7 @@ return(
                 <div className="text">
                 <h2 className = "txt formtitle">Vuoi prenotare un servizio fotografico?</h2>
                 <h4 className= "txt formdesc">Un nostro impiegato ti contatterà in 48 ore</h4>
+                </div>
                 <form className = "input" ref={form} onSubmit = {sendEmail} >
                     <label htmlFor= "nome">
                     <h4 className = "txt label">Nome:</h4>
@@ -68,9 +71,12 @@ return(
                     <h4 className = "txt label">Messaggio:</h4>
                     <input type = "textarea" id = "message"  name ="message" value  = {one.message} onChange = {handleClick} className = "style messaggio"/>
                     </label>
-                    <button type = "submit" className = "style submit " > Manda form!</button>
+
+                    
                     
                 </form>
+                <div className="btn-container">
+                <button type = "submit" className = " style submit " > <h2 className="btn-txt">Manda form!</h2></button>
                 </div>
 </div>
 </article>

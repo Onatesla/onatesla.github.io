@@ -13,7 +13,8 @@ position:relative;
 }
 .text
 {position:relative;
-padding:8%;}
+padding:0;
+margin-top:12%;}
 @media screen and (max-width:800px){
     margin-top:22%;
 }
@@ -21,6 +22,9 @@ padding:8%;}
 
 
 const Contact = () => {
+    React.useEffect(()=>{
+        document.title="Digital Photo RC - Manda una richiesta"
+    },[])
     return (
         <>
            <Navbar></Navbar>

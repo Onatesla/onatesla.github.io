@@ -35,7 +35,7 @@ text-align:center;
         left-margin:22%;
         white-space:no-wrap;
         
-        font-family:"space grotesk"
+        font-family:"poppins"
 }
 .link:hover
         { text-decoration:underline;}

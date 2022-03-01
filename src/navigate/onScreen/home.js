@@ -5,6 +5,7 @@ import Submit from '../form';
 import Footer from '../footer';
 import Sliderone from '../slider';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Caros = styled.div`
 heigth:100%;
@@ -27,10 +28,10 @@ margin-bottom:44%;
     
 }
 .photo{
-    width:100%;
-    height:400px;
+    width:92%;
+    height:300px;
     margin:0;
-    margin-left:2%;
+    margin-left:3.8%;
     margin-top:12%;
     
 
@@ -68,6 +69,10 @@ margin-bottom:2%;
     background:#1d1d1d;
     color:#f6f6f6;
 }
+.cta-btn:hover
+{
+    transform: scale(1.08) ;
+}
 @media screen and (max-width:800px) {
 display:grid;
 grid-template-rows:50% 50%;
@@ -78,10 +83,10 @@ align-items:center;
         position:relative;
         font-family:Poppins;
         margin:0;
-        margin-top:42%;
+        margin-top:32%;
         top:0%;
-        left:2%;
-        width:98%;
+        left:3.2%;
+        width:94%;
         height:50%;
         font-size:0.8em;
         align-items:center;
@@ -90,6 +95,9 @@ align-items:center;
 `;
 
 const Home = () => {
+    React.useEffect(()=>{
+        document.title="Digital Photo RC - Home"
+    },[])
     return(
         <>
         <div>
@@ -98,9 +106,9 @@ const Home = () => {
             <Cta>
             <div className="cta-landing" >
               <h1 className="cta-text">
-                anche tu vuoi queste foto per i tuoi momenti speciali?
+                Anche tu vuoi queste foto per i tuoi momenti speciali?
               </h1>
-              <button type="button" className="cta-btn">Contattaci adesso</button>
+              <Link to="/contact"> <button type="button" className="cta-btn">Contattaci Adesso</button></Link>
             </div>
            
             <article className="showgrid">

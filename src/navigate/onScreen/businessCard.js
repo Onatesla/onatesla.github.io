@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from "styled-components";
 import Footer from "../footer";
 import Navbar from "../header";
@@ -14,11 +15,11 @@ margin-bottom:-1%;
 }
 .data-container
 {
-    margin-top:22%;
+    margin-top:28%;
     margin-left:10%;
-    font-size:1.4em;
+    font-size:1.2em;
     text-transform:capitalize;
-    font-family:"space grotesk";
+    font-family:"poppins";
 
 }
 .landImg
@@ -42,6 +43,9 @@ margin-bottom:-1%;
     width:100%;}
 }`;
 function BusinessCard() {
+    React.useEffect(()=>{
+        document.title="Digital Photo RC - Contatti"
+    },[])
     return (
         <>
         <Navbar />
@@ -50,11 +54,11 @@ function BusinessCard() {
         <img src="https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbpkI/AAAAAAAAm2E/ULYKwzLdXXQL4joCsR2fvBKdtrDkuHTOw/s1600/Fotografo%2BProfessionista.jpg?ssl=1" alt="diocane" className="landImg"/>
         </div>
         <div className="data-container">
-            <h1 className="txt">Telefono: 096556570</h1>
-            <h1 className="txt">email : paperino@photo.it</h1>
-            <h1 className="txt">fax: 096556570</h1>
-            <h1 className="txt">cellulare 1: 3482766454</h1>
-            <h1 className="txt">cellulare 2: 3382364375</h1>
+            <h1 className="txta">Telefono: 096556570</h1>
+            <h1 className="txta">email : paperino@photo.it</h1>
+            <h1 className="txta">fax: 096556570</h1>
+            <h1 className="txta">cellulare 1: 3482766454</h1>
+            <h1 className="txta">cellulare 2: 3382364375</h1>
         </div>
         </BusinessLand>
         <Footer/>

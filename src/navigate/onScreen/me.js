@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import Footer from "../footer";
 import Navbar from "../header";
@@ -11,7 +12,7 @@ height:1000px;
     overflow:hidden;
 }
 .text-container
-{  font-family:"Space Grotesk";
+{  font-family:"poppins";
     position:relative;
     top:50%;
     left:10%;
@@ -25,7 +26,7 @@ height:1000px;
        
     }
     .text-container
-{  font-family:"Space Grotesk";
+{  font-family:"poppins";
     position:relative;
     top:-20%;
     left:10%;
@@ -38,6 +39,9 @@ height:1000px;
 }`
 
 function Me() {
+    React.useEffect(()=>{
+        document.title="Digital Photo RC - Chi sono?"
+    },[])
     return(
         <>
         <Navbar/>

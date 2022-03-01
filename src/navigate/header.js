@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Header=styled.div `
 background:#1d1d1d;
 position:absolute;
-top:0;
+top:0px;
 width:100%;
 box-shadow:4px 4px 18px rgba(27,27,27,.25);
 z-index:2;
@@ -74,7 +74,7 @@ z-index:2;
     list-style: none;
     background-color: rgba(246, 246, 246, .94);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    font-family:"space grotesk";
+    font-family:"poppins";
     font-size: 32px;
     transition-duration: .25s;
   }
@@ -82,7 +82,7 @@ z-index:2;
     display: block;
     padding: 12px 24px;
     color: #333;
-    font-family: "space Grotesk"
+    font-family: "poppins"
     
     font-weight: 600;
     text-decoration: none;
@@ -130,12 +130,14 @@ z-index:2;
     list-style: none;
     background-color: rgba(246, 246, 246, .94);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    font-family:"space grotesk";
+    font-family:"Poppins";
     font-size: 32px;
     transition-duration: .25s;
   }
   #menu__toggle:checked ~ .menu__box {
-    left: 100px !important;
+    position:fixed;
+    left: 20% !important;
+    margin-left:18%;
   }
   }
   @media screen and (max-width:840px) and  (min-width:440px) {
@@ -145,7 +147,8 @@ z-index:2;
       
     }
     #menu__toggle:checked ~ .menu__box {
-      left: 66% !important;
+      left:4%;!important;
+      margin-left:-200px;
     
     }
     .menu__btn {
