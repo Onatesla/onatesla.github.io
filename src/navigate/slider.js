@@ -13,7 +13,7 @@ const data = [
 
 const Sliderone = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         fade:true,
         speed: 200,

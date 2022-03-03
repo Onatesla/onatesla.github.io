@@ -65,13 +65,19 @@ top:0%;}
         border-radius:32px;
         
     }
+    .service-card
+    {
+        left:-12%;
+    }
     .service-desc
     {
     left-margin:2.8%;
     padding:2%;}
-    @media screen and (max-width:800px) { height:100%; 
+    @media screen and (max-width:1420px) {
+        height:100%; 
         margin-bottom:0.8%;
         display:inline;
+        position:relative;
         
         .service-icon
         {

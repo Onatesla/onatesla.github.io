@@ -12,7 +12,7 @@ heigth:100%;
 width:100%;
 z-index:-1;
 object-fit:cover;
-margin-bottom:2%;
+margin-bottom:-0.8%;
 .showgrid
 {  heigth:1000px;
    width:100%;
@@ -33,6 +33,7 @@ margin-bottom:44%;
     margin:0;
     margin-left:3.8%;
     margin-top:12%;
+    z-index:-1;
     
 
 }
@@ -41,7 +42,7 @@ margin-bottom:44%;
 const Cta = styled.div`
 display:grid;
 grid-template-columns:50% 50%;
-margin-bottom:2%;
+margin-bottom:0%;
 
 .cta-landing{
     position:relative;
