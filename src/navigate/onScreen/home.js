@@ -41,13 +41,14 @@ margin-bottom:44%;
 `
 const Cta = styled.div`
 display:grid;
-grid-template-columns:50% 50%;
-margin-bottom:0%;
+grid-template-columns:100%;;
+grid-template-rows:50% 20% 30%;
+height:1400px;
 
 .cta-landing{
     position:relative;
     font-family:Poppins;
-    top:40%;
+    top:20%;
     left:22%;
     width:52%;
     height:50%;
@@ -76,16 +77,27 @@ margin-bottom:0%;
 }
 @media screen and (max-width:800px) {
 display:grid;
-grid-template-rows:50% 50%;
+grid-template-rows:50% 10%;
 grid-template-columns:100%;
+height:600px;
 margin:0;
+margin-top:106px;
+.showgrid
+{  height:300px;
+   width:100%;
+    margin-left:0%;
+}
+.land{
+    width:100%;
+    margin:0;
+}
 align-items:center;
     .cta-landing{
         position:relative;
         font-family:Poppins;
         margin:0;
-        margin-top:32%;
-        top:0%;
+        margin-top:2%;
+        top:-50%;
         left:3.2%;
         width:94%;
         height:50%;
@@ -105,18 +117,18 @@ const Home = () => {
             <Navbar/ >
             </div>
             <Cta>
-            <div className="cta-landing" >
-              <h1 className="cta-text">
-                Anche tu vuoi queste foto per i tuoi momenti speciali?
-              </h1>
-              <Link to="/contact"> <button type="button" className="cta-btn">Contattaci Adesso</button></Link>
-            </div>
+            
            
             <article className="showgrid">
             <Caros>
-            <Sliderone />
+            <img src="https://i.ibb.co/0YtSZbF/Bruno-e-Federica-210821-35.jpg" alt="landing_image" className="photo land" />
             </Caros>
-            
+            <div className="cta-landing" >
+              <h1 className="cta-text">
+                Vuoi informazioni sulla data per un matrimonio?
+              </h1>
+              <Link to="/contact"> <button type="button" className="cta-btn">Contattaci Adesso</button></Link>
+            </div>
             </article>
             </Cta>
         <Video></Video> 

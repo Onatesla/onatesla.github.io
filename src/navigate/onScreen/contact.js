@@ -9,14 +9,13 @@ position:relative;
 .container{
     position:relative;
     top:40%;
-    margin-top:%;;
 }
 .text
 {position:relative;
 padding:0;
 margin-top:12%;}
 @media screen and (max-width:800px){
-    margin-top:22%;
+    margin-top:32%;
 }
 `
 

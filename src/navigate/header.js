@@ -26,7 +26,7 @@ font-family:poppins;
 }
 `
 
-const url = "https://upload.wikimedia.org/wikipedia/it/f/f3/Fastweb_company_logo-1-.png"
+const url = "https://i.ibb.co/hcNcrQp/Senza-titolo-1.png"
 const Navbar = () => {
     return(
         <>

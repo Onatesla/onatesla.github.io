@@ -3,8 +3,10 @@ import styled from "styled-components";
 import Footer from "../footer";
 import Navbar from "../header"
 import Slider from "../slider"
+
  const WorkGrid = styled.div`
  padding:6%;
+ margin-top:4%;
  
  .carotxt
  {font-size:3em;
@@ -34,7 +36,7 @@ position:relative;
 left:20%;
 top:0%;}
 @media screen and (max-width:800px){
-    margin-top:4.2%;
+    margin-top:22.2%;
     .photo{
         height:80%;;
     }
@@ -75,22 +77,25 @@ top:0%;}
     padding:2%;}
     @media screen and (max-width:1420px) {
         height:100%; 
+        width:100%;
         margin-bottom:0.8%;
         display:inline;
         position:relative;
+        left:-11%;
         
         .service-icon
         {
-            visibility:hidden;
+            height:100%;
+            width:100%;
             
         }
         .service-card{
             display:grid;
-            grid-template-columns:80%;
+            grid-template-columns:60% 40%;;
             background-color:#f6f6f6;
             color:#1d1d1d;
             margin:10%;
-            height:150px;
+            height:300px;
             width:100%;;
             border-radius:24px;
             box-shadow:0.001em 0.001em 18px rgba(0, 0, 0, .12);
@@ -100,24 +105,24 @@ top:0%;}
     
 ;
 const data =[
-    {icona:"https://www.tuogadget.com/wp-content/uploads/2020/01/tazza-personalizzata-colorata-COVER.jpg",
-     nome:"Nome Servizio",
-     descrizione:"descrizione servizio bla bla bla bla bla bla bla bla bla bla",},
+    {icona:"https://www.darrigodiamantiroma.it/wp-content/uploads/2019/04/fede-sito.jpg",
+     nome:"Matrimoni e Battesimi",
+     descrizione:"Servizi foto e video, con possibilità di trailer e di stampe in sala.",},
+     {icona: "https://i.ibb.co/9rcNBz8/icona.png",
+     nome:"Eventi / Recite",
+     descrizione:"Servizio di ripresa e fotografia di recite, compleanni, saggi e comunioni",},
+     {icona:"https://www.fotografia-digitale.info/wp-content/uploads/2014/09/fotografie-matrimonio.jpg",
+     nome:"Album Digitali",
+     descrizione:"Stampa e rilegatura di album digitali di vario formato.",},
      {icona:"https://www.tuogadget.com/wp-content/uploads/2020/01/tazza-personalizzata-colorata-COVER.jpg",
-     nome:"Nome Servizio",
-     descrizione:"descrizione servizio bla bla bla bla bla bla bla bla bla bla",},
-     {icona:"https://www.tuogadget.com/wp-content/uploads/2020/01/tazza-personalizzata-colorata-COVER.jpg",
-     nome:"Nome Servizio",
-     descrizione:"descrizione servizio bla bla bla bla bla bla bla bla bla bla",},
-     {icona:"https://www.tuogadget.com/wp-content/uploads/2020/01/tazza-personalizzata-colorata-COVER.jpg",
-     nome:"Nome Servizio",
-     descrizione:"descrizione servizio bla bla bla bla bla bla bla bla bla bla",},
-     {icona:"https://www.tuogadget.com/wp-content/uploads/2020/01/tazza-personalizzata-colorata-COVER.jpg",
-     nome:"Nome Servizio",
-     descrizione:"descrizione servizio bla bla bla bla bla bla bla bla bla bla",},
-     {icona:"https://www.tuogadget.com/wp-content/uploads/2020/01/tazza-personalizzata-colorata-COVER.jpg",
-     nome:"Nome Servizio",
-     descrizione:"descrizione servizio bla bla bla bla bla bla bla bla bla bla",},
+     nome:"Gadget",
+     descrizione:"Tazze, Plaid, Cuscini, Stampa su Tela, Pannelli, Portachiavi e altro ancora",},
+     {icona:"https://www.periscopio.biz/images/fotografia/stampa/FOTO2.gif",
+     nome:"Stampa Foto",
+     descrizione:"Stampa su carta fotografica ad alta resa in 30 minuti in vari formati.",},
+     {icona:"https://www.investireoggi.it/risparmio/wp-content/uploads/sites/9/2016/08/videocassetta.jpg",
+     nome:"Conversione in digitale di cassette",
+     descrizione:"conversione in vari formati digitali di cassette super8, vhs, 8mm e mini-dv.",},
 ]
 const Photogrid = () => {
     React.useEffect(()=>{

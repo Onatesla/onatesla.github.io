@@ -8,13 +8,16 @@ display:grid;
 grid-template-columns:50% 50%;
 margin-bottom:-1.3%;
 height:1000px;
+.iopres
+{font-size:4rem;
+text-transform:capitalize;}
 .img-container{
     overflow:hidden;
 }
 .text-container
 {  font-family:"poppins";
     position:relative;
-    top:50%;
+    top:20%;
     left:10%;
     height:220px;
 }
@@ -50,8 +53,8 @@ function Me() {
              <img src={url} alt="FF" className="bio-pic" />
             </div>
             <div className="text-container">
-                <h1>ciao sono franco</h1>
-                <h4>bla bla bla bla bla</h4>
+                <h1 className="iopres">ciao, sono franco</h1>
+                <h4>lavoro nella fotografia da quasi 30 anni e ho sempre svolto</h4>
 
             </div>
         </Biopic>

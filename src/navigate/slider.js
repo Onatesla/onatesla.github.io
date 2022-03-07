@@ -3,12 +3,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 const data = [
-"https://www.fotografiadimatrimonio.it/wp-content/uploads/2017/01/FDM0638_04_2016-1024x683.jpg",
-"http://www.comunesanquirico.it/wp-content/uploads/IMG_4645-1600x1200.jpg",
-"https://media.wsimag.com/attachments/533331fb345a51af37c5a62ce0727b0334de60ed/store/fill/860/645/ceee17d3ffd5b56c5a55f5a8657c19b1a29eb3998fe112a725a4bf71231c/Matrimonio.jpg",
-"https://www.chietitoday.it/~media/horizontal-hi/58437727219400/matrimoni-2.jpg",
-"https://www.controventofregene.com/wp-content/themes/controvento/images/matrimonio-sulla-spiaggia-fregene-controvento.jpg",
-"https://www.controventofregene.com/wp-content/themes/controvento/images/matrimonio-sulla-spiaggia-fregene-controvento.jpg"
+  "https://i.ibb.co/0YtSZbF/Bruno-e-Federica-210821-35.jpg",
+  "https://i.ibb.co/RzcWXPK/copertina-30x40.jpg",
+  "https://i.ibb.co/qYYZnQW/Pagina039-2.jpg",
+  "https://i.ibb.co/PrSYfXn/Pagina038.jpg",
+  "https://i.ibb.co/7jz3MTw/Pagina039-3.jpg",
+  "https://i.ibb.co/6mPVyNV/Pagina039.jpg",
 ]
 
 const Sliderone = () => {

@@ -69,8 +69,8 @@ function Social() {
             <h4 className="social-subtitle"> per restare aggiornato su sconti, promozioni e tanto altro!</h4>
             <hr className="social-hr"/>
             <div className="social-line">
-                <img src="https://img.icons8.com/ios-filled/344/instagram-new--v1.png" alt="icona" className="social-icon" />
-                <img src="https://img.icons8.com/ios-filled/344/facebook--v1.png" alt="icona" className="social-icon" />
+                <img src="https://img.icons8.com/ios-filled/344/instagram-new--v1.png" href="https://www.instagram.com/digitalphotorc" alt="icona" className="social-icon" />
+                <a href="https://www.facebook.com/digitalphotorc"><img src="https://img.icons8.com/ios-filled/344/facebook--v1.png"  alt="icona" className="social-icon" /></a>
                 <img src="https://img.icons8.com/ios-filled/344/twitter.png" alt="icona" className="social-icon" />
                 <img src="https://img.icons8.com/ios-filled/344/flickr.png" alt="icona" className="social-icon" />
             </div>

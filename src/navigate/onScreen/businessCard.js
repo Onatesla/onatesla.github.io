@@ -15,25 +15,40 @@ margin-bottom:-1%;
 }
 .data-container
 {
-    margin-top:28%;
+    margin-top:16%;
     margin-left:10%;
     font-size:1.2em;
+    height:80%;
+    width:80%;
     text-transform:capitalize;
     font-family:"poppins";
-
+    border:0.001em solid;
+    border-radius:56px;
+  
 }
+.txta
+{ padding:4%; position:relative; }
 .landImg
 {
     object-fit:cover;
     height:760px;
 }
+.tre
+{margin-top:-2%;}
+.due
+{margin-top:-0.6%}
 @media screen and (max-width:800px){
     display:inline;
     .data-container {
-        margin-left:2%;
-        margin-top:8%;
-        font-size:1em;
+        margin-left:0.2%;
+        margin-top:2%;
+        font-size:0.68em;
+        width:85%;
+        padding:6%;
+        border:none;
     }
+    .txta
+{ padding:6%; margin:1.8%; }
     .img-container
     {height:400px;;
         width:100%;
@@ -54,11 +69,10 @@ function BusinessCard() {
         <img src="https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbpkI/AAAAAAAAm2E/ULYKwzLdXXQL4joCsR2fvBKdtrDkuHTOw/s1600/Fotografo%2BProfessionista.jpg?ssl=1" alt="diocane" className="landImg"/>
         </div>
         <div className="data-container">
-            <h1 className="txta">Telefono: 096556570</h1>
-            <h1 className="txta">email : paperino@photo.it</h1>
-            <h1 className="txta">fax: 096556570</h1>
-            <h1 className="txta">cellulare 1: 3482766454</h1>
-            <h1 className="txta">cellulare 2: 3382364375</h1>
+        <h1 className="txta">Contatti:</h1>
+            <h1 className="txta"><img src="https://img.icons8.com/ios-filled/50/000000/phone-not-being-used.png" alt ="contIco" className="icona"/><a href="tel:096556570"> 096556570 </a></h1>
+            <h1 className="txta"><img src="https://img.icons8.com/ios-filled/50/000000/send-mass-email.png" alt="contIco" className="icona due"/><a href="mailto:digitalphotorc@tiscali.it">Digitalphotorc@tiscali.it</a></h1>
+            <h1 className="txta"><img src="https://img.icons8.com/ios-filled/50/000000/iphone.png" alt="contIco" className="icona tre"/> <a href="tel:3482766454"> 3482766454</a></h1>
         </div>
         </BusinessLand>
         <Footer/>
