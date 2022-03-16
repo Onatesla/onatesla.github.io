@@ -6,10 +6,10 @@ import emailjs from '@emailjs/browser'
 const Submit = () => {
 
 const form = useRef();
-const user_email="paolo.uni.95@gmail.com";
+const user_email="franco.fontana2010@libero.it";
 
 const [one, setOne] = useState ({nome : " ",
-email:"paolo.uni.95@gmail.com", message : " ", emaildata: " "});
+email:"franco.fontana2010@libero.it", message : " ", emaildata: " "});
 // const [list, setList] = useState ([]);
 const sendEmail = (e) => {
     if (one.name !== ""){

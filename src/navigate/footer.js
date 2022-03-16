@@ -84,7 +84,7 @@ return(<section className="footer">
          <li><Link to = "/contact"> <h5 className = "footer-nav-menu link" > prenota un matrimonio </h5> </Link></li>
          <li><Link to = "/social"> <h5 className = "footer-nav-menu link" > i nostri social </h5> </Link></li>
          <li><Link to = "/businesscard"> <h5 className = "footer-nav-menu link" > contatti </h5> </Link></li>
-         <li><Link to = "/me"> <h5 className = "footer-nav-menu link" > chi sono? </h5> </Link></li>
+         <li><Link to = "/me"> <h5 className = "footer-nav-menu link" > I nostri video </h5> </Link></li>
          </ul>
     </div>
   

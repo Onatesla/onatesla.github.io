@@ -4,19 +4,23 @@ import styled from "styled-components";
 import Ham from "./sidemenu";
 const Header=styled.div `
 background:#1d1d1d;
-position:absolute;
+position:relative;
 top:0px;
-width:100%;
+width:100%;;
 box-shadow:4px 4px 18px rgba(27,27,27,.15);
 z-index:2;
+overflowX:hidden;
 .nav
 {height:88px;}
 .nav-menu
 {display:flex;
 position:relative;
 top:-50px;
-left:40%;
-gap:6%;}
+left:-2%;
+gap:4%;
+margin-right:0;
+width:600px;
+overflow:hidden;}
 .nav-item
 {color:white;
 font-family:poppins;
@@ -37,7 +41,7 @@ const Navbar = () => {
          <ul className={`nav-menu`}>
       <li><Link to="/where" className="nav-item" >Dove siamo?</Link></li>
       <li><Link to="/photogrid" className="nav-item" >I nostri lavori</Link></li>
-      <li><Link to="/me" className="nav-item" >Chi sono?</Link></li>
+      <li><Link to="/me" className="nav-item" >I nostri video</Link></li>
       <li><Link to="/businesscard" className="nav-item" >Contattaci</Link></li>
       <li><Link to="/contact" className="nav-item" >Preventivo</Link></li>
     </ul>

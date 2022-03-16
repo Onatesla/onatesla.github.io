@@ -30,9 +30,10 @@ margin-bottom:44%;
 .photo{
     width:92%;
     height:300px;
+   
     margin:0;
     margin-left:3.8%;
-    margin-top:12%;
+    margin-top:-100%;
     z-index:-1;
     
 
@@ -67,7 +68,7 @@ height:1400px;
     font-family:Poppins;
     padding:4%;
     font-size:2em;
-    border-radius:36px;
+    border-radius:24px;
     background:#1d1d1d;
     color:#f6f6f6;
 }
@@ -81,7 +82,7 @@ grid-template-rows:50% 10%;
 grid-template-columns:100%;
 height:600px;
 margin:0;
-margin-top:106px;
+margin-top:0px;
 .showgrid
 {  height:300px;
    width:100%;
@@ -97,7 +98,7 @@ align-items:center;
         font-family:Poppins;
         margin:0;
         margin-top:2%;
-        top:-50%;
+        top:-60%;
         left:3.2%;
         width:94%;
         height:50%;

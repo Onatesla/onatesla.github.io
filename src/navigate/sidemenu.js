@@ -98,7 +98,7 @@ function Ham(){
     <ul className={`${show ? '': 'hidden'}`}>
       <li><Link to="/where" className="menu__item" >Dove siamo?</Link></li>
       <li><Link to="/photogrid" className="menu__item" >I nostri lavori</Link></li>
-      <li><Link to="/me" className="menu__item" >Chi sono?</Link></li>
+      <li><Link to="/me" className="menu__item" >I nostri video</Link></li>
       <li><Link to="/businesscard" className="menu__item" >Contattaci</Link></li>
       <li><Link to="/contact" className="menu__item" >Preventivo</Link></li>
     </ul>

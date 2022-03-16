@@ -8,14 +8,14 @@ const ContattiForm = styled.div`
 position:relative;
 .container{
     position:relative;
-    top:40%;
+    top:10%;
 }
 .text
 {position:relative;
 padding:0;
-margin-top:12%;}
+margin-top:2%;}
 @media screen and (max-width:800px){
-    margin-top:32%;
+    margin-top:0%;
 }
 `
 

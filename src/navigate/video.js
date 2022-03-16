@@ -2,7 +2,7 @@ import ReactPlayer from "react-player"
 const Video = () =>{
 
   return(<ReactPlayer
-    url="https://www.youtube.com/watch?v=7cN5Spqfddw"
+    url="https://youtu.be/au8a4V23zno"
     controls
     playbackRate = {2}
     width = "100%"

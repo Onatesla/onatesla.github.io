@@ -6,7 +6,7 @@ import Slider from "../slider"
 
  const WorkGrid = styled.div`
  padding:6%;
- margin-top:4%;
+ margin-top:2%;
  
  .carotxt
  {font-size:3em;
@@ -36,7 +36,7 @@ position:relative;
 left:20%;
 top:0%;}
 @media screen and (max-width:800px){
-    margin-top:22.2%;
+    margin-top:2.2%;
     .photo{
         height:80%;;
     }
@@ -76,7 +76,7 @@ top:0%;}
     left-margin:2.8%;
     padding:2%;}
     @media screen and (max-width:1420px) {
-        height:100%; 
+        height:60%; 
         width:100%;
         margin-bottom:0.8%;
         display:inline;
@@ -95,7 +95,7 @@ top:0%;}
             background-color:#f6f6f6;
             color:#1d1d1d;
             margin:10%;
-            height:300px;
+            height:250px;
             width:100%;;
             border-radius:24px;
             box-shadow:0.001em 0.001em 18px rgba(0, 0, 0, .12);

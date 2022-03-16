@@ -7,7 +7,7 @@ const BusinessLand= styled.section`
 display:grid;
 grid-template-columns:50% 50%;
 height:720px;
-margin-top:2%;
+margin-top:0%;
 margin-bottom:-1%;
 .img-container{
     object-fit:cover;
@@ -15,7 +15,7 @@ margin-bottom:-1%;
 }
 .data-container
 {
-    margin-top:16%;
+    margin-top:10%;
     margin-left:10%;
     font-size:1.2em;
     height:80%;

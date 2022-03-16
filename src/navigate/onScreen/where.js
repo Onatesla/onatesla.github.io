@@ -40,7 +40,7 @@ grid-template-columns:50% 50%;
 }
 .orari
 {
-    inline-size:60%;
+    inline-size:70%;
     text-transform:Capitalize;
     font-size:1.8em;
     margin-top:-2%;
@@ -101,7 +101,7 @@ const Where = () => {
         <h3 className="txt sub">Via Nicola Furnari, 47, 89129 Reggio Calabria RC.</h3>
         <h3 className="txt sub-sub">Orari:</h3>
         <h5 className="txt orari">lunedì-venerdì:
-9.00:20.00
+9-13; 16-20
 
 sabato-domenica:
 Chiuso</h5>
