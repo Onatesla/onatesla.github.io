@@ -91,6 +91,7 @@ margin-top:0px;
 .land{
     width:100%;
     margin:0;
+    loading:lazy;
 }
 align-items:center;
     .cta-landing{
