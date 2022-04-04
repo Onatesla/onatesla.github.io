@@ -122,7 +122,7 @@ const Home = () => {
            
             <article className="showgrid">
             <Caros>
-            <img src="https://i.ibb.co/0YtSZbF/Bruno-e-Federica-210821-35.jpg" alt="landing_image" className="photo land" />
+            <img src="https://i.ibb.co/3hNcP1g/EGBi2.jpg" alt="landing_image" className="photo land" />
             </Caros>
             <div className="cta-landing" >
               <h1 className="cta-text">
