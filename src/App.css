@@ -110,7 +110,8 @@ img.showroomphoto {
 }
 .input {
 	display: inline;
-	margin-top: 8%;
+	margin-top: 10%;
+
 	width: 100%;
 }
 .style {
@@ -118,8 +119,9 @@ img.showroomphoto {
 	color: #1d1d1d;
 	border: none;
 	border-radius: 12px;
-	margin: 2%;
+	margin: 3%;
 	inline-size: 40%;
+	height:32px;
 	padding: 2%;
 	font-family: "Poppins";
 	font-size: 16pt;
@@ -142,7 +144,7 @@ img.showroomphoto {
 }
 .messaggio {
 	width: 50%;
-	margin-top: 0;
+	margin-top: 2.4%;
 }
 .btn-container {
 	margin-left: 1.2%;
@@ -165,7 +167,7 @@ img.showroomphoto {
 	top: 200px;
 	left: 0%;
 	margin-top: 2%;
-	border-radius: 28px;
+	border-radius: 12px;
 }
 .submit:active {
 	color: #f6f6f6;
@@ -207,4 +209,43 @@ img.social {
 	padding: 2%;
 	top: 10%;
 	left: 8%;
+}
+@media screen and (max-width:800px) {
+	.icona {
+	height: 1 0px;
+	margin: 1.8%;
+	float: left;
+}
+.text
+{inline-size: 76%;
+text-align: center;}
+.formtitle
+{font-size:1.2rem;}
+.formdesc
+{font-size: 0.8rem;;}
+.container{
+	position: relative;
+	top:32px;
+	left:48px;
+	
+}
+
+.style
+{
+	height: 28px;
+}
+.btn-container
+{
+	height:40px;
+}
+.submit
+{
+	height: 22px;
+	padding:8%;
+}
+.btn-txt
+{
+	margin:0;
+	padding:6%;
+}
 }

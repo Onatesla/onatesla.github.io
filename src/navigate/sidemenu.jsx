@@ -1,7 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { Link  } from 'react-router-dom'
-import useToggle from "@rooks/use-toggle";
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import useToggle from '@rooks/use-toggle';
 
 const Burger = styled.div`
 .hamburger-menu
@@ -38,7 +39,7 @@ const Burger = styled.div`
 }
 .menu__btn {
   position: absolute;
-  top: 48px;
+  top: 32px;
   right: 8%;
   width: 46px;
   height: 46px;
@@ -72,39 +73,42 @@ const Burger = styled.div`
   padding:2%;
   color: white;
   font-family: "poppins";
-  font-size:180%;
+  font-size:1.4rem;
   font-weight: 600;
+  position:relative;
+  top:-14px;
   text-decoration: none;
   transition-duration: .25s;
 }
 .menu__item:hover {
   background-color: #f6f6f6;
   color:#1d1d1d;
-  border-radius:4px 0px 0px 56px
+  border-radius:2% 0px 0px 22px;
+  
 }
 
-`
+`;
 
-function Ham(){
-  const [show, toggleShow] =  useToggle(false)
- return (  
-<Burger>
-< div className="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" onClick={toggleShow}  />
-    <label className="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
+function Ham() {
+  const [show, toggleShow] = useToggle(false);
+  return (
+    <Burger>
+      <div className="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" onClick={toggleShow} />
+        <label className="menu__btn" htmlFor="menu__toggle">
+          <span />
+        </label>
 
-    <ul className={`${show ? '': 'hidden'}`}>
-      <li><Link to="/where" className="menu__item" >Dove siamo?</Link></li>
-      <li><Link to="/photogrid" className="menu__item" >I nostri lavori</Link></li>
-      <li><Link to="/me" className="menu__item" >I nostri video</Link></li>
-      <li><Link to="/businesscard" className="menu__item" >Contattaci</Link></li>
-      <li><Link to="/contact" className="menu__item" >Preventivo</Link></li>
-    </ul>
-  </div>
-</Burger>
- );
+        <ul className={`${show ? '' : 'hidden'}`}>
+          <li><Link to="/where" className="menu__item">Dove siamo?</Link></li>
+          <li><Link to="/photogrid" className="menu__item">I nostri lavori</Link></li>
+          <li><Link to="/me" className="menu__item">I nostri video</Link></li>
+          <li><Link to="/businesscard" className="menu__item">Contattaci</Link></li>
+          <li><Link to="/contact" className="menu__item">Preventivo</Link></li>
+        </ul>
+      </div>
+    </Burger>
+  );
 }
 
 export default Ham;

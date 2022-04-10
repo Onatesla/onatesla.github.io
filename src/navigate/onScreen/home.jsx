@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from "../header";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Navbar from '../header';
 import Video from '../video';
 import Submit from '../form';
 import Footer from '../footer';
-import Sliderone from '../slider';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const Caros = styled.div`
 heigth:100%;
@@ -39,7 +38,7 @@ margin-bottom:44%;
 
 }
 
-`
+`;
 const Cta = styled.div`
 display:grid;
 grid-template-columns:100%;;
@@ -66,9 +65,9 @@ height:1400px;
     border:solid black 1px;
     background:none;
     font-family:Poppins;
-    padding:4%;
+    padding:2%;
     font-size:2em;
-    border-radius:24px;
+    border-radius:12px;
     background:#1d1d1d;
     color:#f6f6f6;
 }
@@ -91,7 +90,6 @@ margin-top:0px;
 .land{
     width:100%;
     margin:0;
-    loading:lazy;
 }
 align-items:center;
     .cta-landing{
@@ -109,39 +107,41 @@ align-items:center;
 
 `;
 
-const Home = () => {
-    React.useEffect(()=>{
-        document.title="Digital Photo RC - Home"
-    },[])
-    return(
-        <>
-        <div>
-            <Navbar/ >
-            </div>
-            <Cta>
-            
-           
-            <article className="showgrid">
-            <Caros>
-            <img src="https://i.ibb.co/3hNcP1g/EGBi2.jpg" alt="landing_image" className="photo land" />
-            </Caros>
-            <div className="cta-landing" >
-              <h1 className="cta-text">
-                Vuoi informazioni sulla data per un matrimonio?
-              </h1>
-              <Link to="/contact"> <button type="button" className="cta-btn">Contattaci Adesso</button></Link>
-            </div>
-            </article>
-            </Cta>
-        <Video></Video> 
-        
-        <section className = "contatti">
-           <Submit />
-        </section>
-        <Footer></Footer>
-        </>
-        
-    )
+function Home() {
+  React.useEffect(() => {
+    document.title = 'Digital Photo RC - Home';
+  }, []);
+  return (
+    <>
+      <div>
+        <Navbar />
+      </div>
+      <Cta>
+
+        <article className="showgrid">
+          <Caros>
+            <img src="https://i.ibb.co/0YtSZbF/Bruno-e-Federica-210821-35.jpg" alt="landing_image" className="photo land" />
+          </Caros>
+          <div className="cta-landing">
+            <h1 className="cta-text">
+              Vuoi informazioni sulla data per un matrimonio?
+            </h1>
+            <Link to="/contact">
+              {' '}
+              <button type="button" className="cta-btn">Contattaci Adesso</button>
+            </Link>
+          </div>
+        </article>
+      </Cta>
+      <Video />
+
+      <section className="contatti">
+        <Submit />
+      </section>
+      <Footer />
+    </>
+
+  );
 }
 
 export default Home;

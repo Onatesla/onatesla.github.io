@@ -5,7 +5,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: rgb(246, 246, 246);
-	width: 102%;
+	width: 100%;
 	overflow-x: hidden;
 }
 .root {
@@ -36,7 +36,7 @@ code {
 }
 @media screen and (max-width: 800px) {
 	.footer {
-		width: 104%;
+		width: 100%;
 	}
 	button.submit {
 		width: 48%;
