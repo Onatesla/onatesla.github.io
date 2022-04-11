@@ -61,11 +61,13 @@ const Burger = styled.div`
 }
 .menu__btn > span::before {
   content: '';
+  border:solid 0.01em;
   
   top: -8px;
 }
 .menu__btn > span::after {
   content: '';
+  border:solid 0.01em;
   top: 8px;
 }
 .menu__item {

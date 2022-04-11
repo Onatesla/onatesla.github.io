@@ -7,16 +7,20 @@ import Submit from '../form';
 import Footer from '../footer';
 
 const Caros = styled.div`
-heigth:100%;
+height:980px;
 width:100%;
 z-index:-1;
 object-fit:cover;
 margin-bottom:-0.8%;
+background-image:url("https://i.ibb.co/3hNcP1g/EGBi2.jpg");
+background-repeat:no-repeat;
+background-size:cover;
 .showgrid
 {  heigth:1000px;
-   width:100%;
-    margin-left:22%;
+  width:100%;
+  margin-left:22%;
 }
+
 @media screen and (max-width:800px) {
 height:400px;;
 margin-bottom:44%;
@@ -51,12 +55,12 @@ height:1400px;
     top:20%;
     left:22%;
     width:52%;
-    height:50%;
+    height:80%;
     font-size:0.8em;
     margin:0;
     align-items:center;
     text-align:center;
-    
+  
     
 
 }
@@ -66,7 +70,7 @@ height:1400px;
     background:none;
     font-family:Poppins;
     padding:2%;
-    font-size:2em;
+    font-size:1.2em;
     border-radius:12px;
     background:#1d1d1d;
     color:#f6f6f6;
@@ -100,7 +104,7 @@ align-items:center;
         top:-60%;
         left:3.2%;
         width:94%;
-        height:50%;
+        height:60%;
         font-size:0.8em;
         align-items:center;
         text-align:center;}
@@ -120,15 +124,15 @@ function Home() {
 
         <article className="showgrid">
           <Caros>
-            <img src="https://i.ibb.co/0YtSZbF/Bruno-e-Federica-210821-35.jpg" alt="landing_image" className="photo land" />
+            {/* <img src="https://i.ibb.co/0YtSZbF/Bruno-e-Federica-210821-35.jpg" alt="landing_image" className="photo land" /> */}
           </Caros>
           <div className="cta-landing">
             <h1 className="cta-text">
-              Vuoi informazioni sulla data per un matrimonio?
+              Vuoi scoprire tutta la nostra gamma di servizi?
             </h1>
-            <Link to="/contact">
+            <Link to="/photogrid">
               {' '}
-              <button type="button" className="cta-btn">Contattaci Adesso</button>
+              <button type="button" className="cta-btn">Guarda quello che possiamo fare per te </button>
             </Link>
           </div>
         </article>

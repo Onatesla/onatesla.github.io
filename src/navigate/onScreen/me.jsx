@@ -43,7 +43,7 @@ text-align:center; }
 
 function Me() {
   React.useEffect(() => {
-    document.title = 'Digital Photo RC - Chi sono?';
+    document.title = 'Digital Photo RC - I nostri video';
   }, []);
   return (
     <>
