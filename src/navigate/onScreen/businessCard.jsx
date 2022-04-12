@@ -4,57 +4,76 @@ import Footer from '../footer';
 import Navbar from '../header';
 
 const BusinessLand = styled.section`
-display:grid;
-grid-template-columns:100%;
-height:720px;
+
+height:800px;
 margin-top:0%;
-margin-bottom:-1%;
+margin-bottom:0%;
 background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbpkI/AAAAAAAAm2E/ULYKwzLdXXQL4joCsR2fvBKdtrDkuHTOw/s1600/Fotografo%2BProfessionista.jpg?ssl=1");
 .img-container{
     object-fit:cover;
     overflow:hidden;
 }
+.contact
+{
+  font-size:16px;
+  font-weight:900;
+}
 .data-container
 {
-    margin-top:44px;
-    margin-left:10%;
+   
+    position:relative;
+    top:28px;
+    left:122px;
     font-size:1.2em;
     height:88%;
     width:80%;
     text-transform:capitalize;
     font-family:"poppins";
     border:0.001em solid;
-    border-radius:56px;
+    border-radius:12px;
     background:#ececec;
-    display:grid;
-    grid-template-rows:18% 30% 18% 40%;
+   
     
   
 }
 .cont-container
 {
   display:grid;
-  grid-template-columns:10% 80%;
-  grid-template-rows:60px 60px 60px;
+  grid-template-columns:24px 100px;
+  grid-template-rows:24px 24px 24px;
+  column-gap:8px;
+  row-gap:40px;
   font-size:0.6rem;
   position:relative;
-  left:82px;
+  left:64px;
+  top:40px;
+  vertical-align:super;
+  height:200px;
 }
 .info-container
 {
   position:relative;
-  left:82px;
+  left:64px;
+  top:40px;
 }
 .data-header
 {
   position:relative;
-  left:22px;
+  left:64px;
   top:22px;
 }
 .info-header
 {
   position:relative;
-  left:22px;
+  top:22px;
+  left:64px;
+}
+.txta
+{
+  
+  text-align:left;
+  position:relative;
+
 }
 .info-para
 { font-size:1rem;
@@ -62,9 +81,12 @@ background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbp
 }
 .icona
 {
-  height:40px;
+  height:24px;
+  width:24px;
   margin:0px;
-  margin-left:20px;
+  position:relative;
+  
+  justify-items:center;
 }
 .landImg
 {
@@ -73,21 +95,30 @@ background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbp
 }
 
 @media screen and (max-width:800px){
-    display:inline;
+    background-size:contain;
+    height:640px;
+    
     .data-container {
-        margin-left:0.2%;
-        margin-top:2.8%;
+      margin:0;
+      
+        position:relative;
+        top:32px;
+        left:22px;
+        height:70%;
         font-size:0.62em;
-        width:85%;
+        width:80%;
         padding:6%;
         border:none;
     }
     .icona
     {
-        height:32px;
+        height:24px;
+        margin:0;
+        position:relative;
+        top:12px;
     }
     .txta
-{ padding:5%; margin:2%; }
+{  }
     .img-container
     {height:400px;;
         width:100%;
@@ -108,19 +139,29 @@ function BusinessCard() {
         <div className="data-container">
           <h1 className="data-header">Contatti:</h1>
           <div className="cont-container">
-            <img src="https://img.icons8.com/ios-filled/50/000000/phone-not-being-used.png" alt="contIco" className="icona" />
-          <h1 className="txta">
-            <a href="tel:096556570"> 096556570 </a>
-          </h1>
-            <img src="https://img.icons8.com/ios-filled/50/000000/send-mass-email.png" alt="contIco" className="icona due" />
-          <h1 className="txta">
-            <a href="mailto:digitalphotorc@tiscali.it">Digitalphotorc@tiscali.it</a>
-          </h1>
+            <span class="material-icons icona">
+              phone_in_talk
+            </span>
+
+         
+            <a href="tel:096556570" className="contact"> 096556570 </a>
+        
+<span class="material-icons icona">
+email
+</span>
+            <a href="mailto:digitalphotorc@tiscali.it" className="contact">
+         
+              Digitalphotorc@tiscali.it
           
-            <img src="https://img.icons8.com/ios-filled/50/000000/iphone.png" alt="contIco" className="icona tre" />
+              </a>
+          
+<span class="material-icons icona">
+phone_iphone
+</span>
+
             {' '}
-          <h1 className="txta"> <a href="tel:3482766454"> 3482766454</a>
-          </h1>
+       <a href="tel:3482766454" className="contact"> 3482766454</a>
+          
           </div>
       
         <h1 className="info-header">Info utili:</h1>

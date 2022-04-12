@@ -6,44 +6,17 @@ import Video from '../video';
 import Submit from '../form';
 import Footer from '../footer';
 
-const Caros = styled.div`
-height:980px;
-width:100%;
-z-index:-1;
-object-fit:cover;
-margin-bottom:-0.8%;
-background-image:url("https://i.ibb.co/3hNcP1g/EGBi2.jpg");
-background-repeat:no-repeat;
-background-size:cover;
-.showgrid
-{  heigth:1000px;
-  width:100%;
-  margin-left:22%;
-}
 
-@media screen and (max-width:800px) {
-height:400px;;
-margin-bottom:44%;
-    .showgrid
-{   display:flex;
-    height:0;
-    margin:0;
-    
-}
-.photo{
-    width:92%;
-    height:300px;
-   
-    margin:0;
-    margin-left:3.8%;
-    margin-top:-100%;
-    z-index:-1;
-    
 
-}
-
-`;
 const Cta = styled.div`
+.background-img
+{
+  background-image:url("https://i.ibb.co/3hNcP1g/EGBi2.jpg");
+  height:800px;
+  width:100%;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
 display:grid;
 grid-template-columns:100%;;
 grid-template-rows:50% 20% 30%;
@@ -52,7 +25,7 @@ height:1400px;
 .cta-landing{
     position:relative;
     font-family:Poppins;
-    top:20%;
+    top:220px;
     left:22%;
     width:52%;
     height:80%;
@@ -83,14 +56,9 @@ height:1400px;
 display:grid;
 grid-template-rows:50% 10%;
 grid-template-columns:100%;
-height:600px;
+height:800px;
 margin:0;
 margin-top:0px;
-.showgrid
-{  height:300px;
-   width:100%;
-    margin-left:0%;
-}
 .land{
     width:100%;
     margin:0;
@@ -101,7 +69,8 @@ align-items:center;
         font-family:Poppins;
         margin:0;
         margin-top:2%;
-        top:-60%;
+        margin-bottom:80px;
+        top:220px;
         left:3.2%;
         width:94%;
         height:60%;
@@ -122,10 +91,11 @@ function Home() {
       </div>
       <Cta>
 
-        <article className="showgrid">
-          <Caros>
+        
+          <div className="background-img">
             {/* <img src="https://i.ibb.co/0YtSZbF/Bruno-e-Federica-210821-35.jpg" alt="landing_image" className="photo land" /> */}
-          </Caros>
+          </div>
+
           <div className="cta-landing">
             <h1 className="cta-text">
               Vuoi scoprire tutta la nostra gamma di servizi?
@@ -135,7 +105,7 @@ function Home() {
               <button type="button" className="cta-btn">Guarda quello che possiamo fare per te </button>
             </Link>
           </div>
-        </article>
+        
       </Cta>
       <Video />
 

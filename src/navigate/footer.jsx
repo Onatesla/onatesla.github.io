@@ -13,7 +13,7 @@ text-align:center;
         
         width:100%;
         gap:1%;
-        margin-top:1%;
+        margin-top:0%;
         
         background:#1d1d1d;
         height:120%;
@@ -46,22 +46,23 @@ text-align:center;
         .footer-nav
         {
                 display:grid;
-                grid-template-rows:16% 16% 16% 16% 16% 16%;
+                grid-template-rows:12% 12% 12% 12% 12%;
                 grid-template-columns:100%;
                 width:100%;
                 height:300px;
                 
                 text-align:center;
                 background:#1d1d1d;
-                margin-top:22%;
+                
 
         }
         .footer-nav-ul{
                 display:grid;
-                gap:40%;
+                gap:14px;
                 width:90%;
                 position:relative;
                 left:0%;
+                top:12px;
                 height:100%;
                 background:#1d1d1d;
         

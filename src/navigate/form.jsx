@@ -8,7 +8,7 @@ import load from "../Date picker-bro.svg"
 
 const FormWrap = styled.div`
 border-top:solid;
-
+height:800px;
 .container{
 	text-align: center;
 	height: 600px;
@@ -60,26 +60,29 @@ border-top:solid;
 	position:relative;
 }
 .input {
-	display:grid;
-	grid-template-rows: 20% 20% 20%;
-	
+	display:inline;
   text-align: left;
+  height:400px;
 	position: relative;
-  top:-20px;
+  top:120px;
 	left:1%;
 	width: 100%;
+
+}
+p
+{
+  margin:0;
+  position:relative;
+  height:20px;
 }
 .style {
 	background: none;
 	color: #1d1d1d;
 	border:none;
-	margin: 2%;
-  margin-top:8%;
-	inline-size: 40%;
-	height:12px;
-	padding: 2%;
+	height:22px;
+
 	font-family: "Poppins";
-	font-size: 16px;
+	font-size: 24px;
   width:60%;
 	border-bottom: solid 0.08em  #939597;
 }
@@ -108,11 +111,12 @@ border-top:solid;
   height:80%;
   width:80%;
   position:relative;
-  top:10%;
+  top:0%;
 }
 .checkbox{
     display:grid;
-    grid-template-columns:10% 80%;
+    grid-template-columns:10%  80%;
+    gap:6%;
     width:60%;
   
   }
@@ -120,6 +124,19 @@ border-top:solid;
   position:relative;
   top:22px;
   left:14px;
+}
+.end
+{
+  top:40px;
+  border:red solid 0.1rem;
+  height:40px;
+  width:78%;
+  font-size:1.2rem;
+  text-align:center;
+  border-radius:8px;
+  padding:8px;
+  background:#f6f6f6;
+  justify-content:center;
 }
 @media screen and (max-width:1080px){
   
@@ -130,15 +147,17 @@ border-top:solid;
     left:10%;
   }
   .text{
-    margin-bottom:20%;
-    height:180px;
+    margin-bottom:20px;
+    height:60px;
   
   }
   .img-load{
     visibility:hidden;
     display:none;
   }
-  
+  .input{
+    margin-top:144px;
+  }
 }
 `
 
@@ -185,20 +204,22 @@ function Submit() {
           <h4 className="txt formdesc">Un nostro impiegato ti contatterà in 48 ore</h4>
         </div>
 
-      <input {...register("name", { required: true } )} className="style"  placeholder="Nome" />
-     
+      <input {...register("name", { required: true, maxLength:20, pattern: /[A-Za-z]{3}/} )} className="style"  placeholder="Nome" />
+      {errors.name && <p>Campo Richiesto.</p>}
       <input {...register("emaildata", { required: true })} className="style" placeholder="Email"/>
+      {errors.emaildata && <p>Campo Richiesto.</p>}
       <input {...register("email", { required: true })} className="style hidden" type="email" defaultValue="paolo.uni.95@gmail.com"/>
+      {errors.exampleRequired && <p>Campo Richiesto.</p>}
       
-      {errors.exampleRequired && <span>This field is required</span>}
     
       <input {...register("message", { required: true })} className="style" placeholder="Messaggio" />
-          {errors.exampleRequired && <span>This field is required</span>}
+          {errors.message && <p>Campo Richiesto.</p>}
         <div className="checkbox">
           <input {...register("consenso", { required: true })} type="checkbox" className="check" />
           <h6 className="checktext">spuntando accetta, sottostarai ai nostri termini e condizioni, consultabili nel box privacy-policy</h6>.
         </div>
       <button type="submit" className="submit" onClick={handleSubmit(sendEmail)} > <h1 className="txt adj">Invia </h1> </button>
+          {errors.consenso && <p className="end">Devi spuntare il tuo consenso se vuoi inviare il form</p>}
            
           
     </form>

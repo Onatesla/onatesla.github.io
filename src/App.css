@@ -93,6 +93,7 @@ img.logo {
 .contatti {
 	height: 100%;
 	width: 100%;
+	margin-bottom: 22px;;
 	padding-top: 0%;
 }
 
@@ -113,9 +114,8 @@ img.showroomphoto {
 	font-size: 226%;
 }
 .input {
-	display:grid;
-	grid-template-rows: 30% 30% 30%;
-	margin-top: 2%;
+display: inline;
+	margin-top: 0%;
   text-align: left;
 	position: relative;
 	left:6%;
@@ -125,10 +125,10 @@ img.showroomphoto {
 	background: none;
 	color: #1d1d1d;
 	border:none;
-	margin: 3%;
+	margin: 20px;
 	inline-size: 40%;
 	height:32px;
-	padding: 2%;
+
 	font-family: "Poppins";
 	font-size: 16pt;
 	border-bottom: solid 0.08em #959397;
@@ -150,8 +150,8 @@ img.showroomphoto {
 	font-family: "poppins";
 }
 .text {
-	margin-bottom: 3%;
-	margin-top: 3%;
+	margin-bottom: 0;
+	margin-top: 0;
 	margin-left: 0%;
 }
 .messaggio {
