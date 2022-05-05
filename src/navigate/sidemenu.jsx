@@ -38,10 +38,14 @@ const Burger = styled.div`
   left: 80% !important;
 }
 .menu__btn {
+  display: flex;
   position: absolute;
+  justify-content:space-around;
   top: 32px;
-  right: 8%;
-  width: 46px;
+  right: 4vw;
+  max-width: 8vw;
+  min-width:4vh;
+  
   height: 46px;
   cursor: pointer;
   border:none;
@@ -50,11 +54,14 @@ const Burger = styled.div`
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-  display: block;
+  display: flex;
+  justify-content:space-around;
+  align-items:space-between;
+  
   position: absolute;
   width: 100%;
   border:solid 0.01em;
-  height: 4px;
+  height: 2px;
   background-color: white;
   transition-duration: .25s;
   
@@ -62,7 +69,7 @@ const Burger = styled.div`
 .menu__btn > span::before {
   content: '';
   border:solid 0.01em;
-  
+  display: flex;
   top: -8px;
 }
 .menu__btn > span::after {
@@ -104,7 +111,7 @@ function Ham() {
         <ul className={`${show ? '' : 'hidden'}`}>
           <li><Link to="/where" className="menu__item">Dove siamo?</Link></li>
           <li><Link to="/photogrid" className="menu__item">I nostri lavori</Link></li>
-          <li><Link to="/me" className="menu__item">I nostri video</Link></li>
+          <li><Link to="/social" className="menu__item">I nostri Social</Link></li>
           <li><Link to="/businesscard" className="menu__item">Contattaci</Link></li>
           <li><Link to="/contact" className="menu__item">Preventivo</Link></li>
         </ul>

@@ -3,70 +3,66 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
-import styled from "styled-components";
-import load from "../Date picker-bro.svg"
+import styled from 'styled-components';
+import load from '../Date picker-bro.svg';
 
 const FormWrap = styled.div`
-border-top:solid;
-height:800px;
-.container{
-	text-align: center;
-	height: 600px;
-  background:none;
-  width:80%;
-  display:grid;
-  grid-template-columns:60% 40%;
-  position:relative;
-  left:4.8%;
-  margin:4%;
-  border-radius:8px;
-  padding:2%;
-}
-.btn-container {
-	position: relative;
-	left:4%;
-  
 
-	width: 20%;
-	margin-top: 2%;
-}
-.btn-txt {
-	margin: 0;
-	display:flex;
+height:620px;
+
+width:100vw;
+display:flex;
+justify-content:center;
+align-items:start;
+
+.container{
+text-align: center;
+
+  background:none;
+  height:580px;
+  width:80vw;
+  display:flex;
+  flex-direction:row;
   justify-content:center;
-	padding: 2px;
-	font-size: 2rem;
+  align-items:start;
+  gap:14rem;
+  position:relative;
+  left:-2vw;
+  margin:0;
+
 }
+
+
 .submit {
-	background-color: #1d1d1d;
-	color: #f6f6f6 ;
-	border: #1d1d1d solid;
- text-align:center;
-	width: 44%;
-	height: 40px;
-	position: relative;
-	font-size: 1.6rem;
-  padding:2%;
-  top:20px;
-	left: 22%;
-	border-radius: 8px;
+background-color: #1d1d1d;
+color: #f6f6f6 ;
+border: #1d1d1d solid;
+display:flex;
+justify-content:center;
+text-align:center;
+width: 18vw;
+height: 42px;
+position: relative;
+font-size: 1.6rem;
+left: 6vw;
+border-radius: 8px;
 }
 .submit:active {
-	color: #f6f6f6;
-	background-color: black;
-	border: #1d1d1d solid;
+color: #f6f6f6;
+background-color: black;
+border: #1d1d1d solid;
 }
-.text {
-	position:relative;
-}
+
 .input {
-	display:inline;
-  text-align: left;
-  height:400px;
-	position: relative;
-  top:120px;
-	left:1%;
-	width: 100%;
+display:flex;
+flex-direction:column;
+justify-content:start;
+align-items:start;
+text-align: left;
+height:400px;
+position: relative;
+top:100px;
+width: 50vw;
 
 }
 p
@@ -76,25 +72,41 @@ p
   height:20px;
 }
 .style {
-	background: none;
-	color: #1d1d1d;
-	border:none;
-	height:22px;
-
-	font-family: "Poppins";
-	font-size: 24px;
-  width:60%;
-	border-bottom: solid 0.08em  #939597;
+background: none;
+color: #1d1d1d;
+border:none;
+margin:0;
+margin-bottom:2vh;
+margin-top:2vh;
+height:32px;
+font-family: "Poppins";
+font-size: 24px;
+width:32vw;
+border-bottom: solid 0.08em  #939597;
 }
 .formtitle
 { color:#1d1d1d;
   margin:0;
-  font-size:1.4rem;
+  font-size:1.2rem;
+  text-align:left;
 
+  
+
+}
+.text{
+  display:flex;
+  flex-direction:column;
+  justify-content:start;
+  align-items:start;
+  margin:0;
+  padding:0;
+  
 }
 .formdesc
 {
   margin:0;
+  font-size:1.2rem;
+   
 }
 .adj
 {
@@ -103,19 +115,18 @@ p
 }
 .style::placeholder
 {
-	color:#939597;
-
-	font-size: 1.2rem;
+color:#939597;
+font-size: 1.24rem;
 }
 .img-load{
-  height:80%;
-  width:80%;
+  height:400px;
+  width:40vw;
   position:relative;
-  top:0%;
+  top:12vh;
 }
 .checkbox{
     display:grid;
-    grid-template-columns:10%  80%;
+    grid-template-columns:2vw  22vw;
     gap:6%;
     width:60%;
   
@@ -123,15 +134,18 @@ p
 .check{
   position:relative;
   top:22px;
-  left:14px;
+  left:0px;
 }
 .end
 {
   top:40px;
   border:red solid 0.1rem;
-  height:40px;
-  width:78%;
-  font-size:1.2rem;
+  height:42px;
+  width:12vw;
+  position:relative;
+  top:-16vh;
+  left:28vw;
+  font-size:0.8rem;
   text-align:center;
   border-radius:8px;
   padding:8px;
@@ -139,16 +153,26 @@ p
   justify-content:center;
 }
 @media screen and (max-width:1080px){
-  
+  height:800px;
+   width:100vw;
+   position:relative;
+   left:-4vw;
+   margin-bottom:220px;
+  align-items:start;
+
   .container
   { 
-    display:grid;
-    grid-template-columns:100%;
-    left:10%;
+    display:flex;
+    height:100%;
+    align-items:start;
+    width:100vw;
+    margin:0;
+
   }
-  .text{
-    margin-bottom:20px;
-    height:60px;
+  .txt{
+   
+   text-align:left;
+    font-size:0.8rem;
   
   }
   .img-load{
@@ -156,15 +180,35 @@ p
     display:none;
   }
   .input{
-    margin-top:144px;
+    margin-top:0px;
+    font-size:0.6rem;
+    align-items:center;
+    width:80vw;
+  }
+  .style{
+    width:100%;
+  }
+  .text{
+    width:100%;
+  }
+  .checkbox{
+    position:relative;
+    left:-16.8vw;
+    grid-template-columns:4vw 38vw;
+  }
+  .check{
+    top:12px;
+  }
+  .submit
+  { left:20vw;
+    width:38vw;
   }
 }
-`
+`;
 
 function Submit() {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const form = React.useRef()
-
+  const form = React.useRef();
 
   const [one, setOne] = useState({
     nome: ' ',
@@ -177,20 +221,20 @@ function Submit() {
     setOne(data);
     emailjs.sendForm('service_6ckdu5q', 'template_ddnas2b', form.current, 'user_COHw7BwAfI4bYoD3GOuRd')
       .then((result) => {
-        console.log(form.current.email)
+        console.log(form.current.email);
         console.log(result.text);
         alert('form inviato');
       }, (error) => {
         console.log(error.text);
       });
-  }
+  };
 
   // const handleClick = (e) => {
   //   const { name, value } = e.target;
   //   setOne({ ...one, [name]: value });
   //   console.log(value);
   // };
-  console.log(one)
+  console.log(one);
   // useEffect(() => {
   //   const { log } = console;
   //   log(one);
@@ -198,36 +242,36 @@ function Submit() {
   return (
     <FormWrap>
       <div className="container">
-          <form onSubmit={handleSubmit(sendEmail)} ref={form} className="input">
-         <div className="text">
-          <h2 className="txt formtitle">Vuoi prenotare un servizio fotografico?</h2>
-          <h4 className="txt formdesc">Un nostro impiegato ti contatterà in 48 ore</h4>
-        </div>
-
-      <input {...register("name", { required: true, maxLength:20, pattern: /[A-Za-z]{3}/} )} className="style"  placeholder="Nome" />
-      {errors.name && <p>Campo Richiesto.</p>}
-      <input {...register("emaildata", { required: true })} className="style" placeholder="Email"/>
-      {errors.emaildata && <p>Campo Richiesto.</p>}
-      <input {...register("email", { required: true })} className="style hidden" type="email" defaultValue="paolo.uni.95@gmail.com"/>
-      {errors.exampleRequired && <p>Campo Richiesto.</p>}
-      
-    
-      <input {...register("message", { required: true })} className="style" placeholder="Messaggio" />
-          {errors.message && <p>Campo Richiesto.</p>}
-        <div className="checkbox">
-          <input {...register("consenso", { required: true })} type="checkbox" className="check" />
-          <h6 className="checktext">spuntando accetta, sottostarai ai nostri termini e condizioni, consultabili nel box privacy-policy</h6>.
-        </div>
-      <button type="submit" className="submit" onClick={handleSubmit(sendEmail)} > <h1 className="txt adj">Invia </h1> </button>
-          {errors.consenso && <p className="end">Devi spuntare il tuo consenso se vuoi inviare il form</p>}
-           
-          
-    </form>
-        <div className="svg-container">
-          <img src={load} alt="load" className="img-load"/>
+        <form onSubmit={handleSubmit(sendEmail)} ref={form} className="input">
+          <div className="text">
+            <h2 className="txt formtitle">Vuoi prenotare un servizio fotografico?</h2>
+            <h4 className="txt formdesc">Un nostro impiegato ti contatterà in 48 ore</h4>
           </div>
 
-        
+          <input {...register('name', { required: true, maxLength: 20, pattern: /[A-Za-z]{3}/ })} className="style" placeholder="Nome" />
+          {errors.name && <p>Campo Richiesto.</p>}
+          <input {...register('emaildata', { required: true })} className="style" placeholder="Email" />
+          {errors.emaildata && <p>Campo Richiesto.</p>}
+          <input {...register('email', { required: true })} className="style hidden" type="email" defaultValue="paolo.uni.95@gmail.com" />
+          {errors.exampleRequired && <p>Campo Richiesto.</p>}
+
+          <input {...register('message', { required: true })} className="style" placeholder="Messaggio" />
+          {errors.message && <p>Campo Richiesto.</p>}
+          <div className="checkbox">
+            <input {...register('consenso', { required: true })} type="checkbox" className="check" />
+            <h6 className="checktext">spuntando accetta, sottostarai ai nostri termini e condizioni, consultabili nel box privacy-policy</h6>
+            .
+          </div>
+          <button type="submit" className="submit" onClick={handleSubmit(sendEmail)}>
+            {' '}
+            <h1 className="txt adj">Invia </h1>
+            {' '}
+          </button>
+          {errors.consenso && <p className="end">Devi spuntare il tuo consenso se vuoi inviare il form</p>}
+
+        </form>
+
+        <img src={load} alt="load" className="img-load" />
 
       </div>
     </FormWrap>

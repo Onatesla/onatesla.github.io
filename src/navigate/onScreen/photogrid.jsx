@@ -8,10 +8,15 @@ import Slider from '../slider';
 
 const WorkGrid = styled.div`
  padding:6%;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
  margin-top:-6%;
- width:90%;
+ position:relative;
+ left:4vw;
+ width:80vw;
  .carotxt
- {font-size:3em;
+ {font-size:2.2em;
     font-family:"poppins";
 text-align:center;
 text-transform:capitalize;
@@ -21,22 +26,24 @@ padding:2%;}
 
 
 .service-card{
-    display:grid;
-    grid-template-columns:50% 50%;
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    
     background-color:white;
     color:#1d1d1d;
     margin:0%;
-    height:88%;
-    width:88%;;
+    height:26vh;
+    width:36vw;
     border-radius:12px;
     overflow:hidden;
     box-shadow:0.001em 0.001em 18px rgba(0, 0, 0, .08); 
 }
 .service-icon
-{height:100%;
-width:92%;
+{height:22vh;
+width:30vw;
 position:relative;
-left:28%;
+left:6vw;
 top:0%;}
 @media screen and (max-width:800px){
     margin-top:2.2%;
@@ -51,19 +58,18 @@ top:0%;}
  `;
 const ServiceContainer = styled.div`
     position:relative; 
-    left:-88px;
+    top:4vh;
     display:grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 30%  30%  30%;
-    grid-gap:20px;
-    height:100%;
+    grid-gap:4vw;
+    height:max-content;
     width:100%;
-    margin:8%;
+    
     .txt-container{
-        padding:2%;
+        
         position:relative;
-        top:-2%;
-        left:8%;
+        left:2vw;
         font-family:"poppins";
     }
     .service-name{
@@ -75,6 +81,7 @@ const ServiceContainer = styled.div`
     .service-card
     {
         left:-12%;
+        padding:2%;
     }
     .service-desc
     {

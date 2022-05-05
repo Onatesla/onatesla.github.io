@@ -6,14 +6,22 @@ import Footer from '../footer';
 
 const ContattiForm = styled.div`
 position:relative;
+height:100vh;
+justify-content:center;
 .container{
     position:relative;
-    top:10%;
+    top:12vh;
+    
+    
 }
 .text
 {position:relative;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 padding:0;
-margin-top:2%;}
+}
 @media screen and (max-width:800px){
     margin-top:0%;
 }

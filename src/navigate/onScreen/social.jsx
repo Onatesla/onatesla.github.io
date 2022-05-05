@@ -7,7 +7,7 @@ const SocialCard = styled.section`
 margin:0;
 position:relative;
 margin-top:12%;
-height:540px;
+height:60vh;
 display:grid;
 grid-template-rows:12% 12% 5% 40%;
 grid-gap:2%;

@@ -47,7 +47,7 @@ function Navbar() {
           <ul className="nav-menu">
             <li><Link to="/where" className="nav-item">Dove siamo?</Link></li>
             <li><Link to="/photogrid" className="nav-item">I nostri lavori</Link></li>
-            <li><Link to="/me" className="nav-item">I nostri video</Link></li>
+            <li><Link to="/social" className="nav-item">I nostri social</Link></li>
             <li><Link to="/businesscard" className="nav-item">Contattaci</Link></li>
             <li><Link to="/contact" className="nav-item">Preventivo</Link></li>
           </ul>
