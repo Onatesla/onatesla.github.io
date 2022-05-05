@@ -100,7 +100,7 @@ background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbp
 
 @media screen and (max-width:800px){
     background-size:contain;
-    height:640px;
+    height:100vh;
     
     .data-container {
       margin:0;
@@ -109,6 +109,8 @@ background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbp
         top:32px;
         left:10vw;
         height:80vh;
+        min-height:80vh;
+      max-heigth:84vh;
         font-size:0.62em;
         width:80vw;
        
@@ -116,6 +118,7 @@ background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbp
     }
     .cont-container{
       left:8vw;
+      
       column-gap:4vw;
     }
     .info-container{

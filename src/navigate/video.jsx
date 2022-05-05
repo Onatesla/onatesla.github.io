@@ -3,7 +3,7 @@ import React from 'react';
 
 function Video() {
   return (
-    <ReactPlayer
+  <ReactPlayer
       url="https://youtu.be/au8a4V23zno"
       controls
       playbackRate={2}

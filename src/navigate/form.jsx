@@ -153,9 +153,10 @@ font-size: 1.24rem;
   justify-content:center;
 }
 @media screen and (max-width:1080px){
-  height:800px;
+  height:520px;
    width:100vw;
    position:relative;
+   top:0vh;
    left:-4vw;
    margin-bottom:220px;
   align-items:start;
@@ -187,21 +188,28 @@ font-size: 1.24rem;
   }
   .style{
     width:100%;
+    border-radius:none;
   }
+  .style::placeholder
+{
+font-size: 1rem;
+}
   .text{
     width:100%;
   }
   .checkbox{
+    align-items:center;
     position:relative;
     left:-16.8vw;
-    grid-template-columns:4vw 38vw;
+    grid-template-columns:4vw 42vw;
   }
   .check{
-    top:12px;
+    top:0px;
   }
   .submit
-  { left:20vw;
-    width:38vw;
+  { align-self:end;
+    width:32vw;
+    left:-2px;
   }
 }
 `;

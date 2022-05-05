@@ -15,7 +15,8 @@ const Cta = styled.div`
 
 }
 .photo{
-  height:100%
+  height:100%;
+  width:100vw;
 }
 
 
@@ -79,16 +80,17 @@ align-items:center;
         position:relative;
         font-family:Poppins;
         margin:0;
+        border-radius:12px;
         left:0vw;
         top:2vh;
-        width:82vw;
+        width:92vw;
         height:40vh;
         font-size:0.6em;
         align-items:center;
         text-align:center;}
 .ctaTextContainer{
   text-align:left;
-  width:180px;
+  width:280px;
 }
 
 `;

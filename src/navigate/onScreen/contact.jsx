@@ -23,7 +23,20 @@ align-items:center;
 padding:0;
 }
 @media screen and (max-width:800px){
+    
+    padding: 0;
     margin-top:0%;
+    margin-bottom:2rem;
+    height:620px;
+    width:80vw;
+    .container{
+    position:relative;
+    top:2vh;
+    left:-1.6vh;
+    height:42vh;
+    
+    
+}
 }
 `;
 
