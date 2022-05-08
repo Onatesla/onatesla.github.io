@@ -184,7 +184,7 @@ function BusinessCard() {
               <h4 className="info-para">
                 Digital Photo è un azienda individuale per la fotografia e il photo/video editing.
                 Il titolare e responsabile legale dell&apos;azienda è Francesco Fontana.
-                P.iva 010202102202102.
+                P.iva 02225453807.
 
               </h4>
             </div>
