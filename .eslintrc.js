@@ -16,12 +16,13 @@ module.exports = {
     requireConfigFile: false,
     sourceType: 'module',
     babelOptions: {
-       "presets": ["@babel/preset-react"]
-  }},
+      presets: ['@babel/preset-react'],
+    },
+  },
   plugins: [
     'react',
-    'jsx',
+    'jsx-a11y',
   ],
   rules: {
   },
-}
+};

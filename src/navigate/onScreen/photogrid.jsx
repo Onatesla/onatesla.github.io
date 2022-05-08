@@ -7,14 +7,30 @@ import Navbar from '../header';
 import Slider from '../slider';
 
 const WorkGrid = styled.div`
- padding:6%;
+ height:max-content;
+ margin-bottom:22vh;
  display:flex;
  flex-direction:column;
- justify-content:center;
- margin-top:-6%;
+ justify-content:start;
+ 
  position:relative;
- left:4vw;
- width:80vw;
+ left:1.2vw;
+ width:100vw;
+ .carosello{
+   width:72vw;
+  position:relative;
+  left:12.8vw;
+   align-items:center;
+   justify-content:center;
+   border-radius:2px;
+   margin-bottom:12vh;
+ }
+ .photo{
+   border-radius:8px;
+   width:72vw;
+   height:68vh;
+   align-self:center;
+ }
  .carotxt
  {font-size:2.2em;
     font-family:"poppins";
@@ -54,17 +70,24 @@ top:0%;}
     font-size:1.2rem;
 }
 }
+    @media screen and (max-width:1420px) {
+   left:0vw;
+  .carosello{
+    left:12.8vw;
+  } }
+
 
  `;
 const ServiceContainer = styled.div`
     position:relative; 
     top:4vh;
+    left:8vw;
     display:grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 30%  30%  30%;
     grid-gap:4vw;
     height:max-content;
-    width:100%;
+    width:80vw;
     
     .txt-container{
         
@@ -88,28 +111,38 @@ const ServiceContainer = styled.div`
     left-margin:2.8%;
     padding:2%;}
     @media screen and (max-width:1420px) {
-        height:40%; 
+        height:fit-content; 
         width:100%;
         margin-bottom:0.2%;
-        display:inline;
+        display:flex;
+        flex-direction:column;
         position:relative;
-        left:-11%;
+        left:0.1vw;
         
         .service-icon
         {
             height:100%;
-            width:100%;
+            width:36vw;
+            padding:0;
+            margin:0;
+            border-radius:8px;
+            border:solid;
             
         }
+        .txt-container{
+          width:52vw;
+        }
         .service-card{
-            display:grid;
-            grid-template-columns:60% 40%;;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
             background-color:#f6f6f6;
             color:#1d1d1d;
-            margin:10%;
-            height:80%;
-            width:100%;;
-            border-radius:24px;
+            position:relative;
+            left:4vw;
+            height:32vh;
+            width:86vw;
+            border-radius:12px;
             box-shadow:0.001em 0.001em 18px rgba(0, 0, 0, .12);
         }
         .service-name{
@@ -123,7 +156,13 @@ const ServiceContainer = styled.div`
             padding:2%;
         }
         
-    }`;
+    }
+    @media screen  and (max-width:680px){
+ .service-card{
+   height:18vh;
+ }
+
+}`;
 
 function Photogrid() {
   const data = React.useMemo(() => [

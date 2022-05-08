@@ -5,16 +5,17 @@ import Slider from 'react-slick';
 
 function Sliderone() {
   const data = React.useMemo(() => [
-    'https://i.ibb.co/0YtSZbF/Bruno-e-Federica-210821-35.jpg',
     'https://i.ibb.co/RzcWXPK/copertina-30x40.jpg',
     'https://i.ibb.co/qYYZnQW/Pagina039-2.jpg',
     'https://i.ibb.co/PrSYfXn/Pagina038.jpg',
     'https://i.ibb.co/7jz3MTw/Pagina039-3.jpg',
+    'https://i.ibb.co/0YtSZbF/Bruno-e-Federica-210821-35.jpg',
     'https://i.ibb.co/6mPVyNV/Pagina039.jpg',
   ], []);
   const settings = {
     dots: false,
     infinite: true,
+    lazyLoading: true,
     fade: true,
     speed: 200,
     slidesToShow: 1,

@@ -17,7 +17,7 @@ overflowX:hidden;
 {display:flex;
 position:relative;
 top:-50px;
-left:-2%;
+left:2vw;
 gap:4%;
 margin-right:0;
 width:600px;
@@ -47,7 +47,6 @@ function Navbar() {
           <ul className="nav-menu">
             <li><Link to="/where" className="nav-item">Dove siamo?</Link></li>
             <li><Link to="/photogrid" className="nav-item">I nostri lavori</Link></li>
-            <li><Link to="/social" className="nav-item">I nostri social</Link></li>
             <li><Link to="/businesscard" className="nav-item">Contattaci</Link></li>
             <li><Link to="/contact" className="nav-item">Preventivo</Link></li>
           </ul>

@@ -23,7 +23,7 @@ const Cta = styled.div`
 .cta-landing{
     position:absolute;
     font-family:Poppins;
-    top:16vw;
+    top:18vw;
     left:8vw;
     height:420px;
     width:48vw;
@@ -40,6 +40,8 @@ const Cta = styled.div`
     
 
 }
+
+
 .ctaImg{
   height:280px;
   border-radius:286px;
@@ -55,7 +57,9 @@ const Cta = styled.div`
     background:none;
     font-family:Poppins;
     padding:2%;
-    font-size:1.4em;
+    position:relative;
+    left:0rem;
+    font-size:0.8em;
     border-radius:12px;
     background:#1d1d1d;
     color:#f6f6f6;
@@ -91,6 +95,9 @@ align-items:center;
 .ctaTextContainer{
   text-align:left;
   width:280px;
+}
+.cta-btn {
+  font-size:1.2rem
 }
 
 `;

@@ -78,10 +78,10 @@ img.logo {
 	display: grid;
 }
 .photo {
-	height: 1000px;
-	width: 100%;
+	
+	
 	z-index: -1;
-	object-fit: fill;
+	object-fit: contain;
 }
 .dot {
 	list-style: square;

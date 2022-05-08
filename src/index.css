@@ -13,11 +13,12 @@ body {
 }
 button.slick-prev,
 button.slick-next {
-	border: solid rgb(170, 167, 167);
-	border-radius: 63px;
-	background-color: black;
-	height: 60px;
-	width: 40px;
+	border: solid rgb(20, 20, 20);
+	border-radius: 12px;
+	color:brown;
+	background: black !important;
+	height: 100px;
+	width: 60px;
 	z-index: 2;
 }
 button.slick-next {
@@ -27,6 +28,15 @@ button.slick-next {
 button.slick-prev {
 	left: 2%;
 }
+button.slick-prev:hover{
+		transform: scale(1.08) translate(0, -50%);
+	background: rgb(78, 78, 78) !important;
+}
+button.slick-next:hover{
+	transform: scale(1.08) translate(0, -50%);
+	background: rgb(78, 78, 78) !important;
+}
+
 .nav {
 	overflow: hidden;
 }
@@ -50,4 +60,16 @@ code {
 @font-face {
 	font-family: "poppins";
 	src: url(./Poppins-Regular.ttf);
+}
+@media screen  and (max-width:445px){
+	 button.slick-prev,
+button.slick-next {
+	border: solid rgb(20, 20, 20);
+	border-radius: 12px;
+	color:brown;
+	background: black !important;
+	height: 40px;
+	width: 40px;
+	z-index: 2;
+}
 }

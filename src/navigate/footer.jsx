@@ -2,134 +2,66 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import React from 'react';
 
+const url = 'https://i.ibb.co/hcNcrQp/Senza-titolo-1.png';
+
 const Foot = styled.div`
-display:inline-flex;
-color:white;
-width:100%;
-text-align:center;
-.footer-nav{
-        color:white;
-        display:flex;
-        
-        width:100%;
-        gap:1%;
-        margin-top:0%;
-        
-        background:#1d1d1d;
-        height:120%;
-
+background-color:#1d1d1d;
+height:20vh;
+width:100vw;
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+@media screen  and (max-width:680px){
+  flex-direction:column;
+  padding-bottom:20px;
 }
-.footer-nav-ul{
-        display:flex;
-        gap:10%;
-        width:100%;
-        padding:0.2%;
-        position:relative;
-        left:4%;
-        
-}
-.link
-{
-        color:white;
-        text-transform:capitalize;
-        
-        left-margin:22%;
-        white-space:no-wrap;
-        
-        font-family:"poppins"
-}
-.link:hover
-        { text-decoration:underline;}
-@media screen and (max-width:820px) 
-{ width:100%;
- margin:0;
-        .footer-nav
-        {
-                display:grid;
-                grid-template-rows:12% 12% 12% 12% 12%;
-                grid-template-columns:100%;
-                width:100%;
-                height:300px;
-                
-                text-align:center;
-                background:#1d1d1d;
-                
-
-        }
-        .footer-nav-ul{
-                display:grid;
-                gap:14px;
-                width:90%;
-                position:relative;
-                left:0%;
-                top:12px;
-                height:100%;
-                background:#1d1d1d;
-        
-        }
-        .link
-        {
-                left-margin:0%;
-                top-margin:42%;
-                padding:0%;
-                background:#1d1d1d;
-        }
-        
-        li
-        {margin:0;
-        padding:0;
-height:30px;}
         `;
+const DataWrap = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+width:38vw;
+color:#f6f6f6;
+margin:2rem;
+margin-right:8rem;
+@media screen  and (max-width:680px){
+  display:none;
+}
+`;
+const SocialWrap = styled.div`
+width:20vw;
+display:flex;
+justify-content:space-evenly;
+.social-icon{
+  height:10vh;
+ 
+  
+
+}`;
+
 function Footer() {
   return (
     <section className="footer">
       <Foot>
-        <div className="footer-nav">
+        <Link to="/"><img src={url} alt="Logo" className="logo" /></Link>
+        <DataWrap>
+          <p>
+            Sembox s.r.l, Piazza Ernesto De Angeli 3, 20146 Milano
+            <br />
+            {' '}
+            P.Iva 05691710965
+            <br />
 
-          <ul className="footer-nav-ul">
-            <li>
-              <Link to="/photogrid">
-                {' '}
-                <h5 className="footer-nav-menu link">I nostri lavori </h5>
-              </Link>
-            </li>
-            <li>
-              <Link to="/where">
-                <h5 className="footer-nav-menu link">Dove Siamo </h5>
-                {' '}
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact">
-                {' '}
-                <h5 className="footer-nav-menu link"> prenota un matrimonio </h5>
-                {' '}
-              </Link>
-            </li>
-            <li>
-              <Link to="/social">
-                {' '}
-                <h5 className="footer-nav-menu link"> i nostri social </h5>
-                {' '}
-              </Link>
-            </li>
-            <li>
-              <Link to="/businesscard">
-                {' '}
-                <h5 className="footer-nav-menu link"> contatti </h5>
-                {' '}
-              </Link>
-            </li>
-            <li>
-              <Link to="/me">
-                {' '}
-                <h5 className="footer-nav-menu link"> I nostri video </h5>
-                {' '}
-              </Link>
-            </li>
-          </ul>
-        </div>
+            Negozio di Fotografia & Video. Vendita di articoli inerenti la fotografia e il digitale
 
+          </p>
+        </DataWrap>
+        <SocialWrap>
+          <img src="https://img.icons8.com/color/96/000000/instagram-new--v1.png" href="https://www.instagram.com/digitalphotorc" alt="icona" className="social-icon" />
+          <a href="https://www.facebook.com/digitalphotorc"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="icona" className="social-icon" /></a>
+          <img src="https://img.icons8.com/color/96/000000/youtube-play.png" alt="icona" className="social-icon" />
+
+        </SocialWrap>
       </Foot>
 
     </section>

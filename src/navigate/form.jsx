@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable camelcase */
+/* eslint-disable no-console */
+/* eslint-disable no-alert  */
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';

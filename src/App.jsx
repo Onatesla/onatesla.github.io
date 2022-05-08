@@ -6,9 +6,8 @@ import Home from './navigate/onScreen/home';
 import Contact from './navigate/onScreen/contact';
 import Photogrid from './navigate/onScreen/photogrid';
 import Where from './navigate/onScreen/where';
-import Social from './navigate/onScreen/social';
+
 import BusinessCard from './navigate/onScreen/businessCard';
-import Me from './navigate/onScreen/me';
 
 function App() {
   return (
@@ -19,9 +18,7 @@ function App() {
         <reactRouterDom.Route to path="/contact" element={<Contact />} />
         <reactRouterDom.Route to path="/photogrid" element={<Photogrid />} />
         <reactRouterDom.Route to path="/where" element={<Where />} />
-        <reactRouterDom.Route to path="/social" element={<Social />} />
         <reactRouterDom.Route to path="/businesscard" element={<BusinessCard />} />
-        <reactRouterDom.Route to path="/me" element={<Me />} />
       </reactRouterDom.Routes>
     </reactRouterDom.BrowserRouter>
 
