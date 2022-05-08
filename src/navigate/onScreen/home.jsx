@@ -17,6 +17,7 @@ const Cta = styled.div`
 .photo{
   height:100%;
   width:100vw;
+  object-fit:fill;
 }
 
 

@@ -46,10 +46,10 @@ function Footer() {
         <Link to="/"><img src={url} alt="Logo" className="logo" /></Link>
         <DataWrap>
           <p>
-            Sembox s.r.l, Piazza Ernesto De Angeli 3, 20146 Milano
+            Digital Photo di Fontana Francesco, via Nicola Furnari 47, Reggio Calabria 89129
             <br />
             {' '}
-            P.Iva 05691710965
+            P.Iva 02225453807
             <br />
 
             Negozio di Fotografia & Video. Vendita di articoli inerenti la fotografia e il digitale
@@ -57,9 +57,9 @@ function Footer() {
           </p>
         </DataWrap>
         <SocialWrap>
-          <img src="https://img.icons8.com/color/96/000000/instagram-new--v1.png" href="https://www.instagram.com/digitalphotorc" alt="icona" className="social-icon" />
+          <a href="https://www.instagram.com/digitalphotorc"><img src="https://img.icons8.com/color/96/000000/instagram-new--v1.png" alt="icona" className="social-icon" /></a>
           <a href="https://www.facebook.com/digitalphotorc"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="icona" className="social-icon" /></a>
-          <img src="https://img.icons8.com/color/96/000000/youtube-play.png" alt="icona" className="social-icon" />
+          <a href="https://www.youtube.com/channel/UCQuBWv9iTaPV6kEuHXiaIAQ/featured"><img src="https://img.icons8.com/color/96/000000/youtube-play.png" alt="icona" className="social-icon" /></a>
 
         </SocialWrap>
       </Foot>
