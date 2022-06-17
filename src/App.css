@@ -90,13 +90,7 @@ img.logo {
 	height: 10px;
 }
 
-.contatti {
-	height: 600px;
-	width: 100vw;
-	padding-top: 0%;
-	display: flex;
-	justify-items: start;
-}
+
 
 .showroom {
 	align-items: center;

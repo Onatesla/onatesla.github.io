@@ -44,6 +44,7 @@ justify-content:center;
 text-align:center;
 width: 18vw;
 height: 42px;
+padding:1.2rem;
 position: relative;
 font-size: 1.6rem;
 left: 6vw;
@@ -155,12 +156,12 @@ font-size: 1.24rem;
   justify-content:center;
 }
 @media screen and (max-width:1080px){
-  height:520px;
+  height:420px;
    width:100vw;
    position:relative;
-   top:0vh;
+   top:-40px;
    left:-4vw;
-   margin-bottom:220px;
+   margin-bottom:120px;
   align-items:start;
 
   .container
@@ -175,7 +176,8 @@ font-size: 1.24rem;
   .txt{
    
    text-align:left;
-    font-size:0.8rem;
+    font-size:1.6vh;
+    font-family:'DM SANS'
   
   }
   .img-load{

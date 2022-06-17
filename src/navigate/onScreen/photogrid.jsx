@@ -93,7 +93,7 @@ const ServiceContainer = styled.div`
         
         position:relative;
         left:2vw;
-        font-family:"poppins";
+        font-family:"DM sans";
     }
     .service-name{
         
@@ -126,7 +126,7 @@ const ServiceContainer = styled.div`
             padding:0;
             margin:0;
             border-radius:8px;
-            border:solid;
+            
             
         }
         .txt-container{
@@ -136,7 +136,7 @@ const ServiceContainer = styled.div`
             display:flex;
             justify-content:space-evenly;
             align-items:center;
-            background-color:#f6f6f6;
+
             color:#1d1d1d;
             position:relative;
             left:4vw;
@@ -147,7 +147,7 @@ const ServiceContainer = styled.div`
         }
         .service-name{
             font-size:1.2rem;
-            padding:8ì4px;
+            
              margin:0; 
         }
         .service-desc{

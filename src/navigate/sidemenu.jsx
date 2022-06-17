@@ -76,9 +76,11 @@ padding: 2%;
 color: white;
 font-family: "poppins";
 font-size: 1.4rem;
+text-align:right;
 font-weight: 600;
 position: relative;
 top: -14px;
+left:-14px;
 text-decoration: none;
 transition-duration: .25s;
 }

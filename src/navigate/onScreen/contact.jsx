@@ -6,11 +6,11 @@ import Footer from '../footer';
 
 const ContattiForm = styled.div`
 position:relative;
-height:100vh;
+height:76vh;
 justify-content:center;
 .container{
     position:relative;
-    top:12vh;
+    top:4vh;
     
     
 }
@@ -31,8 +31,8 @@ padding:0;
     width:80vw;
     .container{
     position:relative;
-    top:2vh;
-    left:-1.6vh;
+    top:10vh;
+    left:-1.2vh;
     height:42vh;
     
     

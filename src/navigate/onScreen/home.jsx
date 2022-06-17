@@ -23,14 +23,15 @@ const Cta = styled.div`
 
 .cta-landing{
     position:absolute;
-    font-family:Poppins;
+    font-family:'DM sans', Poppins;
     top:18vw;
     left:8vw;
-    height:420px;
-    width:48vw;
+    height:400px;
+    width:42vw;
     background-color:rgba(195,195,195 ,0.92);
     border-radius:8px;
     font-size:1em;
+    font-weight:400;
     color:black;
     gap:12rem;
     margin:0;
@@ -41,7 +42,16 @@ const Cta = styled.div`
     
 
 }
+.paragraph{
+  font-weight:900;
 
+  margin-top:18px;
+  margin-bottom:22px;
+  letter-spacing:2px;
+}
+.cta-text{
+  font-weight:600;
+}
 
 .ctaImg{
   height:280px;
@@ -50,17 +60,17 @@ const Cta = styled.div`
 .ctaTextContainer{
   text-align:left;
   
-  width:480px;
+  width:32vw;
 }
 .cta-btn
 {
     border:solid black 1px;
     background:none;
-    font-family:Poppins;
-    padding:2%;
+    font-family:'DM sans';
+    padding:1rem;
     position:relative;
     left:0rem;
-    font-size:0.8em;
+    font-size:1em;
     border-radius:12px;
     background:#1d1d1d;
     color:#f6f6f6;
@@ -134,9 +144,8 @@ function Home() {
 
       </Cta>
 
-      <section className="contatti">
-        <Submit />
-      </section>
+      <Submit />
+
       <Footer />
     </>
 

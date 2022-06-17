@@ -15,8 +15,9 @@ background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbp
 }
 .contact
 {
-  font-size:16px;
-  font-weight:900;
+  font-size:20px;
+  font-weight:400;
+  font-family:'dm sans'
 }
 .data-container
 {
@@ -28,7 +29,8 @@ background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbp
     height:60vh;
     width:82vw;
     text-transform:capitalize;
-    font-family:"poppins";
+    font-family:"DM sans";
+    font-weight:200;
     border:0.001em solid;
     border-radius:12px;
     background:rgba(255,255,255, 0.8);
@@ -65,12 +67,17 @@ background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbp
   position:relative;
   left:64px;
   top:0px;
+  font-size:18px;
+  font-weight:900;
 }
 .info-header
 {
   position:relative;
-  top:0px;
+  top:16px;
   left:64px;
+  font-size:18px;
+  font-weight:900;
+
 }
 .txta
 {
@@ -80,8 +87,9 @@ background-image:url("https://i0.wp.com/4.bp.blogspot.com/-pN30-bal-1o/VwtDBbnbp
 
 }
 .info-para
-{ font-size:1rem;
+{ font-size:1.2rem;
   inline-size:70%;
+  font-weight:500;
 }
 .icona
 {
