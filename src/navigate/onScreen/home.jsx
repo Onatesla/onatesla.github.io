@@ -112,6 +112,44 @@ align-items:center;
 }
 
 `;
+const ShopLink = styled.div`background:#939597;
+height: 4rem;
+width:12vw;
+border-radius:12px;
+overflow:hidden;
+color:white;
+
+gap:2vw;
+box-shadow: 0.01rem 0.01rem 8px rgba(0,0,0,0.17);
+display:flex;
+position: fixed; top: 100px; 
+right: 2vw;
+.img{
+    height: 4rem;
+    flex: 2;
+    background-Color: #ececec;
+    padding-right: 0.8rem,
+}
+.mobHid{
+ 
+}
+@media (max-width:440px){
+  width:14vw;
+  flex-direction:column;
+  height:8rem;
+  gap:0.2rem;
+  margin-left:0.2rem;
+  right:84vw;
+  top:10vh;
+  .img{
+    height:6vh;
+    
+  }
+  .mobHid{
+    margin-left:0.1rem;
+  }
+  
+}`;
 
 function Home() {
   React.useEffect(() => {
@@ -121,6 +159,24 @@ function Home() {
     <>
       <div>
         <Navbar />
+        <ShopLink>
+          <img
+            src="https://img.icons8.com/ios/100/undefined/online-shop-favorite.png"
+            alt="shop"
+            className="img"
+          />
+
+          <div style={{
+            flex: 3, display: 'flex', gap: '2rem', alignItems: 'center', justifyContents: 'center', alignText: 'center',
+          }}
+          >
+            <h1 style={{ fontSize: '14px' }} className="mobHid">
+              Vai allo
+              <br />
+              <span className="mobShow" style={{ fontSize: '19px', fontWeight: 900 }}>Shop!</span>
+            </h1>
+          </div>
+        </ShopLink>
       </div>
       <Cta>
 
