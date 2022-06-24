@@ -159,24 +159,26 @@ function Home() {
     <>
       <div>
         <Navbar />
-        <ShopLink>
-          <img
-            src="https://img.icons8.com/ios/100/undefined/online-shop-favorite.png"
-            alt="shop"
-            className="img"
-          />
+        <a href="https://digital-photo-di-francesco-fontana.sumupstore.com">
+          <ShopLink>
+            <img
+              src="https://img.icons8.com/ios/100/undefined/online-shop-favorite.png"
+              alt="shop"
+              className="img"
+            />
 
-          <div style={{
-            flex: 3, display: 'flex', gap: '2rem', alignItems: 'center', justifyContents: 'center', alignText: 'center',
-          }}
-          >
-            <h1 style={{ fontSize: '14px' }} className="mobHid">
-              Vai allo
-              <br />
-              <span className="mobShow" style={{ fontSize: '19px', fontWeight: 900 }}>Shop!</span>
-            </h1>
-          </div>
-        </ShopLink>
+            <div style={{
+              flex: 3, display: 'flex', gap: '2rem', alignItems: 'center', justifyContents: 'center', alignText: 'center',
+            }}
+            >
+              <h1 style={{ fontSize: '14px' }} className="mobHid">
+                Vai allo
+                <br />
+                <span className="mobShow" style={{ fontSize: '19px', fontWeight: 900 }}>Shop!</span>
+              </h1>
+            </div>
+          </ShopLink>
+        </a>
       </div>
       <Cta>
 

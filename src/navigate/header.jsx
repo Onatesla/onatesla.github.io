@@ -52,7 +52,7 @@ function Navbar() {
             <li><Link to="/contact" className="nav-item">Preventivo</Link></li>
 
           </ul>
-          <a href="https://digital-photo-di-francesco-fontana.sumupstore.com" />
+
         </div>
         <Ham />
       </section>
