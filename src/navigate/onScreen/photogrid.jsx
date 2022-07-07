@@ -35,9 +35,13 @@ const WorkGrid = styled.div`
  {font-size:2.2em;
     font-family:"poppins";
 text-align:center;
-text-transform:capitalize;
+display:flex;
+align-items:center;
+justify-content:center;
+
 margin-left:0;
-padding:2%;}
+height:100px;
+}
 
 
 
@@ -206,7 +210,7 @@ function Photogrid() {
       <section className="photogrid">
         <WorkGrid>
           <div className="carosello">
-            <h1 className="txt carotxt"> le nostre foto </h1>
+            <h1 className="txt carotxt"> Le nostre foto </h1>
             <Slider className="slide" />
           </div>
           <ServiceContainer>

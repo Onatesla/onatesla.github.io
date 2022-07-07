@@ -118,7 +118,7 @@ width:12vw;
 border-radius:12px;
 overflow:hidden;
 color:white;
-
+z-index:1;
 gap:2vw;
 box-shadow: 0.01rem 0.01rem 8px rgba(0,0,0,0.17);
 display:flex;
@@ -174,7 +174,7 @@ function Home() {
               <h1 style={{ fontSize: '14px' }} className="mobHid">
                 Vai allo
                 <br />
-                <span className="mobShow" style={{ fontSize: '19px', fontWeight: 900 }}>Shop!</span>
+                <span className="mobShow" style={{ fontSize: '17px', fontWeight: 900 }}>Shop!</span>
               </h1>
             </div>
           </ShopLink>
