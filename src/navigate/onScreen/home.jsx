@@ -140,7 +140,7 @@ right: 2vw;
   gap:0.2rem;
   margin-left:0.2rem;
   right:84vw;
-  top:10vh;
+  top:100px;
   .img{
     height:6vh;
     
